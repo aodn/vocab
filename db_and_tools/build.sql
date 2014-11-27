@@ -17,6 +17,6 @@ create schema contr_vocab_db ;
 
 \i docs_seb/Vocab_db_table_creation_10092014.sql; 
 
-\i docs_seb/test_seb_vocab_v5.txt; 
+\i docs_seb/test_seb_vocab_v6.txt; 
 
 
