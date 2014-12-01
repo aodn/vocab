@@ -1566,15 +1566,8 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liqui
 				null as dcterms_issued,
 				-- should be issued ?
 				vt.date_added as dcterms_created,
-				case when rs.citation_string is not null
-					then rs.citation_string
-					else vr.name
-				end as dc_source,
-				case
-					when rso.name is not null
-					then rso.name
-					else vro.name
-				end as dc_publisher,
+				rs.citation_string as dc_source,
+				rso.name as dc_publisher,
 				case
 					when vt.uid like 'http://vocab.aodn.org.au/def/platform/instance/%'
 					then vt.ancillary_information
