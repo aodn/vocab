@@ -1531,10 +1531,120 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liqui
         <renameColumn newColumnName="_version" oldColumnName="version" tableName="vocabulary_register"/>
     </changeSet>
 
+	<changeSet author="dnahodil and anguss" id="0044">
 
+		<sql>
+			drop materialized view _rdf_m;
+		</sql>
 
+		<dropView viewName="_rdf" />
+		<dropView viewName="_rdf_concept" />
+		<dropView viewName="_skos_concept" />
 
+		<!-- This is the view we are actually changing, the others are just being recreated unchanged -->
+		<createView viewName="_skos_concept" replaceIfExists="true">
+			select
+				c.name as subject,
+				'skos:Concept'::varchar as rdf_type,
+				c.label as skos_preflabel,
+				c.description as skos_definition,
+				c.date_added as dcterms_issued,
+				-- should be issued ?
+				null as dcterms_created,
+				null as dc_source,
+				null as dc_publisher,
+				null as dc_description
+
+			from classification_scheme_category c
+
+			union all
+			select
+				vt.uid as subject,
+				'skos:Concept'::varchar as rdf_type,
+				vt.name as skos_preflabel,
+				vt.definition as skos_definition,
+				null as dcterms_issued,
+				-- should be issued ?
+				vt.date_added as dcterms_created,
+				rs.citation_string as dc_source,
+				rso.name as dc_publisher,
+				case
+					when vt.uid like 'http://vocab.aodn.org.au/def/platform/instance/%'
+					then vt.ancillary_information
+					else null
+				end as dc_description
+
+			from vocabulary_term vt
+
+			left join vocabulary_register vr on vt.vocabulary_register_id = vr.id
+
+			-- should be left, since we explicitly test for null
+			left join reference_source rs on vt.reference_source_id = rs.id
+
+			-- reference source organisation
+			left join organisation rso on rs.organisation_id = rso.id
+			-- vocabulary register organisation
+			-- Bad Data? or migration - contains references to value 52 but there is no corresponding organisation
+			-- in the original data
+			left join responsible_party rp on vr.owner_responsible_party_id = rp.id
+			left join organisation vro on rp.organisation_id = vro.id
+		</createView>
+
+		<createView viewName="_rdf_concept">
+			select
+				c.subject as subject, 'skos:prefLabel' as predicate, c.skos_preflabel as object
+			from _skos_concept  c
+			union all
+			select
+				c.subject as subject, 'rdf:type' as predicate, c.rdf_type
+			from _skos_concept  c
+			union all
+			select
+				c.subject, 'skos:definition'::varchar, c.skos_definition
+			from _skos_concept  c
+			union all
+			-- BOTH ISSUED AND CREATED ?
+			select
+				c.subject, 'dcterms:issued'::varchar, c.dcterms_issued::varchar
+			from _skos_concept  c
+
+			union all
+			select
+				s.subject, 'skos:inScheme'::varchar, s.object
+			from _skos_concept_skos_inscheme  s
+
+			union all
+			select
+				b.subject, 'skos:broader'::varchar, b.object
+			from _skos_concept_skos_broader  b
+			union all
+			select
+				n.subject, 'skos:narrower'::varchar, n.object
+			from _skos_concept_skos_narrower n
+			union all
+			select
+				c.subject, 'dcterms:created'::varchar, c.dcterms_created::varchar
+			from _skos_concept  c
+			union all
+			select
+				c.subject, 'dc:source'::varchar, c.dc_source
+			from _skos_concept  c
+			union all
+			select
+				c.subject, 'dc:publisher'::varchar, c.dc_publisher
+			from _skos_concept  c
+		</createView>
+
+		<createView viewName="_rdf">
+			select * from _rdf_concept_scheme
+			union all select * from _rdf_concept
+		</createView>
+
+		<sql>
+			create materialized view _rdf_m as select * from _rdf;
+			create index on _rdf_m( object );
+			create index on _rdf_m( subject );
+			create index on _rdf_m( predicate );
+		</sql>
+	</changeSet>
 </databaseChangeLog>
-
-
-
