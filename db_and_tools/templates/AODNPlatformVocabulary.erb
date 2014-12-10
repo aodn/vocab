@@ -5,15 +5,59 @@
 
 <%= render "concept_scheme.erb" %>
 
-
 <% for @concept in query_sql_subject( %{
-	select r1.subject as subject
-	from _rdf_m r1
-	left join _rdf_m r2 on r2.subject = r1.subject
-	where r1.predicate = 'skos:inScheme' and r1.object = '#{ @conceptScheme }'
-	and r2.predicate = 'rdf:type' and r2.object = 'skos:Concept' },
-	nil )%>
-<%= render "concept.erb" %>
+    select r1.subject as subject
+    from _rdf_m r1
+    left join _rdf_m r2 on r2.subject = r1.subject
+    where r1.predicate = 'skos:inScheme' and r1.object = '#{ @conceptScheme }'
+    and r2.predicate = 'rdf:type' and r2.object = 'skos:Concept' },
+    nil )%>
+
+<skos:Concept rdf:about="<%= @concept %>">
+
+    <% for @object in query_rdf_objects( 'skos:topConceptOf', @concept) %>
+    <skos:topConceptOf rdf:resource="<%= @object %>"/>
+    <% end %>
+
+    <skos:inScheme rdf:resource="<%= @conceptScheme %>"/>
+
+    <% for @object in query_rdf_objects( 'skos:broader', @concept) %>
+    <skos:broader rdf:resource="<%= @object %>"/>
+    <% end %>
+
+    <% for @object in query_rdf_objects( 'skos:narrower', @concept) %>
+    <skos:narrower rdf:resource="<%= @object %>"/>
+    <% end %>
+
+    <% for @object in query_rdf_objects( 'skos:prefLabel', @concept) %>
+    <skos:prefLabel xml:lang="en"><%= @object %></skos:prefLabel>
+    <% end %>
+
+    <% for @object in query_rdf_objects( 'skos:definition', @concept) %>
+    <skos:definition><%= @object %></skos:definition>
+    <% end %>
+
+    <% for @object in query_rdf_objects( 'dc:source', @concept) %>
+    <dc:source><%= @object %></dc:source>
+    <% end %>
+
+    <% for @object in query_rdf_objects( 'dc:publisher', @concept) %>
+    <dc:publisher><%= @object %></dc:publisher>
+    <% end %>
+
+    <% for @object in query_rdf_objects( 'dcterms:issued', @concept) %>
+    <skos:issued><%= @object %></skos:issued>
+    <% end %>
+
+    <% for @object in query_rdf_objects( 'dcterms:created', @concept) %>
+    <skos:created><%= @object %></skos:created>
+    <% end %>
+
+    <% for @object in query_rdf_objects( 'dc:description', @concept) %>
+    <dc:description><%= @object %></dc:description>
+    <% end %>
+
+</skos:Concept>
 <% end %>
 
 <%= render "footer.erb" %>
