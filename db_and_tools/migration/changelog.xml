@@ -2697,5 +2697,160 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liqui
 			(44);
 		</sql>	
 		
-	</changeSet>		
+	</changeSet>
+		<!-- 	Fix issues in the platform vocab and platform classification
+			so that the SKOS files generated from the database will be ingested more easily PoolParty
+			-->	
+	<changeSet author="smancini" id="0053">	
+	<!-- 	Update URIs in the classification_scheme_table to match 
+			the name pattern expected by PoolParty-->	
+		<sql>	
+			UPDATE contr_vocab_db.classification_scheme SET name = 'http://vocab.aodn.org.au/platform_classes/1' WHERE name = 'http://vocab.aodn.org.au/def/ClassScheme/platform1';
+		</sql>	
+	<!-- 	Update URIs in the classification_scheme_category_table to match 
+			the name pattern expected by PoolParty-->	
+		<sql>	
+			UPDATE contr_vocab_db.classification_scheme_category SET name = replace(name, '/def/ClassScheme/platform1/Category/', '/platform_classes/category/');
+		</sql>	
+	<!-- 	Update URIs in the vocabulary_register_table to match 
+			the name pattern expected by PoolParty-->	
+		<sql>	
+			UPDATE contr_vocab_db.vocabulary_register SET uid = 'http://vocab.aodn.org.au/platform/1' WHERE uid = 'http://vocab.aodn.org.au/def/platform';			
+		</sql>			
+	<!-- 	Update URIs in the vocabulary_term_table to match 
+			the name pattern expected by PoolParty-->	
+		<sql>	
+			UPDATE contr_vocab_db.vocabulary_term SET uid = replace(uid::text, '/def/platform/instance/', '/platform/entity/')::character(110);			
+		</sql>	
+	<!-- 	Clean the association_type_id in the internal_associated_terms table 
+			problem with instruments wrongly assigned to the platform association type-->	
+		<sql>	
+			UPDATE contr_vocab_db.internal_associated_terms SET association_type_id = 3 WHERE subject_vocabulary_term_id = 806;
+			UPDATE contr_vocab_db.internal_associated_terms SET association_type_id = 3 WHERE subject_vocabulary_term_id = 807;
+			UPDATE contr_vocab_db.internal_associated_terms SET association_type_id = 3 WHERE subject_vocabulary_term_id = 809;
+			UPDATE contr_vocab_db.internal_associated_terms SET association_type_id = 3 WHERE subject_vocabulary_term_id = 810;
+			UPDATE contr_vocab_db.internal_associated_terms SET association_type_id = 3 WHERE subject_vocabulary_term_id = 811;
+			UPDATE contr_vocab_db.internal_associated_terms SET association_type_id = 3 WHERE subject_vocabulary_term_id = 812;
+			UPDATE contr_vocab_db.internal_associated_terms SET association_type_id = 3 WHERE subject_vocabulary_term_id = 813;
+			UPDATE contr_vocab_db.internal_associated_terms SET association_type_id = 3 WHERE subject_vocabulary_term_id = 814;
+			UPDATE contr_vocab_db.internal_associated_terms SET association_type_id = 3 WHERE subject_vocabulary_term_id = 815;
+			UPDATE contr_vocab_db.internal_associated_terms SET association_type_id = 3 WHERE subject_vocabulary_term_id = 816;
+			UPDATE contr_vocab_db.internal_associated_terms SET association_type_id = 3 WHERE subject_vocabulary_term_id = 817;
+			UPDATE contr_vocab_db.internal_associated_terms SET association_type_id = 3 WHERE subject_vocabulary_term_id = 818;
+			UPDATE contr_vocab_db.internal_associated_terms SET association_type_id = 3 WHERE subject_vocabulary_term_id = 819;
+			UPDATE contr_vocab_db.internal_associated_terms SET association_type_id = 3 WHERE subject_vocabulary_term_id = 820;
+			UPDATE contr_vocab_db.internal_associated_terms SET association_type_id = 3 WHERE subject_vocabulary_term_id = 821;
+			UPDATE contr_vocab_db.internal_associated_terms SET association_type_id = 3 WHERE subject_vocabulary_term_id = 822;		
+		</sql>	
+	<!-- 	Creation of a new platform called small boat in order to respond to  
+			several queries from users about the difficulty to understand self-propelled boat term-->	
+		<sql>
+			INSERT INTO contr_vocab_db.vocabulary_term (name, uid, short_name, ancillary_information, definition, alternative_term_expression, date_added, proposal_term_status, term_status, date_status_amended, term_notes, proposer_responsible_party_id, vocabulary_register_id, added_by_person_id, vocabulary_type_id) VALUES
+			('small boat', 'http://vocab.aodn.org.au/platform/entity/823',
+			'',
+			'', 'A small self-propelled platform operating on the surface of the water column in unpredictable locations that is smaller than a ship but too large to easily remove from the water.', '', '2015-04-14 00:00:00', 'final',
+			'valid', '2015-04-14 00:00:00', '', (
+			SELECT r.id 
+			from contr_vocab_db.responsible_party r 
+			inner join contr_vocab_db.person p 
+			on r.person_id = p.id 
+			Where p.name like '%Mancini%'
+			), (
+			SELECT r.id 
+			from contr_vocab_db.vocabulary_register r 
+			Where r.uid like '%platform%'
+			) , (
+			SELECT r.id 
+			from contr_vocab_db.person r 
+			Where r.name like '%Mancini%'
+			),  (
+			SELECT r.id 
+			from contr_vocab_db.vocabulary_type r 
+			Where r.name like '%Platform%'
+			)
+			)
+		</sql>	
+	<!-- 	 Add exactmatch statement for the new vocabulary term small boat 
+			and BODC term self propelled boat-->	
+		<sql>	
+			INSERT INTO contr_vocab_db.external_associated_terms (uid, vocabulary_term_id, association_type_id) VALUES
+			('http://vocab.nerc.ac.uk/collection/L06/current/37', 
+			(
+			SELECT r.id 
+			from contr_vocab_db.vocabulary_term r 
+			Where r.name like '%small boat%'
+			)
+			, (
+			SELECT r.id 
+			from contr_vocab_db.association_type r 
+			Where r.name like '%exactMatch%'
+			)
+			)		
+		</sql>
+	<!-- 	Remove self propelled boat from the term_category_classification table 
+			-->	
+		<sql>	
+			DELETE from contr_vocab_db.term_category_classification where vocabulary_term_id IN
+			(SELECT r.vocabulary_term_id
+			from contr_vocab_db.term_category_classification r
+			inner join contr_vocab_db.vocabulary_term p
+			on r.vocabulary_term_id = p.id
+			where p.name = 'self-propelled boat'
+			);		
+		</sql>	
+	<!-- 	 Add small boat in the term_category_classification table
+			-->	
+		<sql>	
+			INSERT INTO contr_vocab_db.term_category_classification (classification_scheme_category_id, vocabulary_term_id) VALUES
+			(
+			(SELECT r.id 
+			from contr_vocab_db.classification_scheme_category r 
+			Where r.label = 'Vessel'
+			), (
+			SELECT r.id 
+			from contr_vocab_db.vocabulary_term r 
+			Where r.name = 'small boat'
+			)
+			)		
+		</sql>			
+	<!-- 	Missing entries in the internal_associated_terms table for the following mooring 
+			Bass strait calibration site mooring-->	
+		<sql>	
+			INSERT INTO contr_vocab_db.internal_associated_terms (subject_vocabulary_term_id, object_vocabulary_term_id, association_type_id) VALUES
+			(
+			(SELECT r.id 
+			from contr_vocab_db.vocabulary_term r 
+			Where r.name like '%Bass Strait Calibration%'
+			), (
+			SELECT r.id 
+			from contr_vocab_db.vocabulary_term r 
+			Where r.name like '%subsurface mooring%'
+			), (
+			SELECT r.id 
+			from contr_vocab_db.association_type r 
+			Where r.name = 'isInstanceOf'
+			)
+			)		
+		</sql>	
+	<!-- 	 Missing entries in the internal_associated_terms table for the following mooring 
+			Storm Bay calibration site mooring-->	
+		<sql>	
+			INSERT INTO contr_vocab_db.internal_associated_terms (subject_vocabulary_term_id, object_vocabulary_term_id, association_type_id) VALUES
+			(
+			(SELECT r.id 
+			from contr_vocab_db.vocabulary_term r 
+			Where r.name like '%Storm Bay Calibration%'
+			), (
+			SELECT r.id 
+			from contr_vocab_db.vocabulary_term r 
+			Where r.name like '%subsurface mooring%'
+			), (
+			SELECT r.id 
+			from contr_vocab_db.association_type r 
+			Where r.name = 'isInstanceOf'
+			)
+			)		
+		</sql>	
+	
+	</changeSet>	
 </databaseChangeLog>
