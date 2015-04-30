@@ -1,4 +1,4 @@
-#!/usr/bin/ruby
+#!/usr/bin/env ruby
 
 # Example Usage,
 # ./render.rb -t AODNParameterVocabulary.erb
