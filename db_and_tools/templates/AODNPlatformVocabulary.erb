@@ -2,8 +2,9 @@
 <%= render "header.erb" %>
 
 <% @conceptScheme = 'http://vocab.aodn.org.au/def/platform' %>
+<% @lang = 'xml:lang="en"' %>
 
-<%= render "concept_scheme.erb" %>
+<%= render "concept_scheme_pp.erb" %>
 
 <% for @concept in query_sql_subject( %{
     select r1.subject as subject
@@ -15,26 +16,26 @@
 
 <skos:Concept rdf:about="<%= @concept %>">
 
+    <% for @object in query_rdf_objects( 'skos:prefLabel', @concept) %>
+    <skos:prefLabel <%= @lang %>><%= @object %></skos:prefLabel>
+    <% end %>
+
     <% for @object in query_rdf_objects( 'skos:topConceptOf', @concept) %>
     <skos:topConceptOf rdf:resource="<%= @object %>"/>
     <% end %>
 
     <skos:inScheme rdf:resource="<%= @conceptScheme %>"/>
 
-    <% for @object in query_rdf_objects( 'skos:broader', @concept) %>
-    <skos:broader rdf:resource="<%= @object %>"/>
+    <% for @object in query_rdf_objects( 'dcterms:created', @concept) %>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"><%= @object %></dcterms:created>
     <% end %>
 
-    <% for @object in query_rdf_objects( 'skos:narrower', @concept) %>
-    <skos:narrower rdf:resource="<%= @object %>"/>
-    <% end %>
-
-    <% for @object in query_rdf_objects( 'skos:prefLabel', @concept) %>
-    <skos:prefLabel xml:lang="en"><%= @object %></skos:prefLabel>
+    <% for @object in query_rdf_objects( 'dcterms:issued', @concept) %>
+    <dcterms:creator><%= @object %></dcterms:creator>
     <% end %>
 
     <% for @object in query_rdf_objects( 'skos:definition', @concept) %>
-    <skos:definition><%= @object %></skos:definition>
+    <skos:definition <%= @lang %>><%= @object %></skos:definition>
     <% end %>
 
     <% for @object in query_rdf_objects( 'dc:source', @concept) %>
@@ -45,16 +46,16 @@
     <dc:publisher><%= @object %></dc:publisher>
     <% end %>
 
-    <% for @object in query_rdf_objects( 'dcterms:issued', @concept) %>
-    <skos:issued><%= @object %></skos:issued>
+    <% for @object in query_rdf_objects( 'skos:narrower', @concept) %>
+    <skos:narrower rdf:resource="<%= @object %>"/>
     <% end %>
 
-    <% for @object in query_rdf_objects( 'dcterms:created', @concept) %>
-    <skos:created><%= @object %></skos:created>
+    <% for @object in query_rdf_objects( 'skos:broader', @concept) %>
+    <skos:broader><%= @object %></skos:broader>
     <% end %>
 
-    <% for @object in query_rdf_objects( 'dc:description', @concept) %>
-    <dc:description><%= @object %></dc:description>
+    <% for @object in query_rdf_objects( 'skos:broadMatch', @concept) %>
+    <skos:broadMatch>TODO</skos:broadMatch>
     <% end %>
 
 </skos:Concept>
