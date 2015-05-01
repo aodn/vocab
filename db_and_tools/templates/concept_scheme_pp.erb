@@ -1,0 +1,49 @@
+<skos:ConceptScheme rdf:about="<%= @conceptScheme %>">
+
+  <csw:hierarchyRoot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</csw:hierarchyRoot>
+  <csw:hierarchyRootType rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+
+  <% for @object in query_rdf_objects( 'dc:title', @conceptScheme ) %>
+  <dcterms:title <%= @lang %>><%= @object %></dcterms:title>
+  <% end%>
+
+  <% for @object in query_rdf_objects( 'dc:description', @conceptScheme ) %>
+  <dcterms:description <%= @lang %>><%= @object %></dcterms:description>
+  <% end %>
+
+  <% for @object in query_rdf_objects( 'dc:contributor', @conceptScheme ) %>
+  <dcterms:contributor <%= @lang %>><%= @object %></dcterms:contributor>
+  <% end %>
+
+  <% for @object in query_rdf_objects( 'dc:subject', @conceptScheme ) %>
+  <dcterms:subject <%= @lang %>><%= @object %></dcterms:subject>
+  <% end %>
+
+  <% for @object in query_rdf_objects( 'dc:publisher', @conceptScheme ) %>
+  <dcterms:publisher <%= @lang %>><%= @object %></dcterms:publisher>
+  <% end %>
+
+  <% for @object in query_rdf_objects( 'dc:creator', @conceptScheme ) %>
+  <dcterms:creator <%= @lang %>><%= @object %></dcterms:creator>
+  <% end %>
+
+  <% for @object in query_rdf_objects( 'dc:created', @conceptScheme ) %>
+  <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"><%= @object %></dcterms:created>
+  <% end %>
+
+  <% for @object in query_rdf_objects( 'dcterms:hasVersion', @conceptScheme ) %>
+  <dcterms:hasVersion><%= @object %></dcterms:hasVersion>
+  <% end %>
+
+  <% for @object in query_rdf_objects( 'owl:versionInfo', @conceptScheme ) %>
+  <owl:versionInfo><%= @object %></owl:versionInfo>
+  <% end %>
+
+  <dc:rights>Freely Available For Reuse</dc:rights>
+
+  <% for @object in query_rdf_objects( 'skos:hasTopConcept', @conceptScheme ) %>
+  <skos:hasTopConcept rdf:resource="<%= @object %>"/>
+  <% end %>
+</skos:ConceptScheme>
+
+
