@@ -1,7 +1,7 @@
 
 <%= render "header.erb" %>
 
-<% @conceptScheme = 'http://vocab.aodn.org.au/def/ClassScheme/platform1' %>
+<% @conceptScheme = 'http://vocab.aodn.org.au/platform_classes/1' %>
 <%= render "concept_scheme.erb" %>
 
 <% for @topConcept in query_sql_subject( %{
