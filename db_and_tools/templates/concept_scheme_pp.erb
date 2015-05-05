@@ -1,0 +1,40 @@
+<skos:ConceptScheme rdf:about="<%= @conceptScheme %>">
+
+  <% for @object in query_rdf_objects( 'dc:title', @conceptScheme ) %>
+  <dcterms:title <%= @lang %>><%= @object %></dcterms:title>
+  <% end%>
+
+  <% for @object in query_rdf_objects( 'dc:description', @conceptScheme ) %>
+  <dcterms:description <%= @lang %>><%= @object %></dcterms:description>
+  <% end %>
+
+  <% for @object in query_rdf_objects( 'dc:creator', @conceptScheme ) %>
+  <dcterms:contributor <%= @lang %>><%= @object %></dcterms:contributor>
+  <% end %>
+
+  <% for @object in query_rdf_objects( 'dc:subject', @conceptScheme ) %>
+  <dcterms:subject <%= @lang %>><%= @object %></dcterms:subject>
+  <% end %>
+
+  <% for @object in query_rdf_objects( 'dc:publisher', @conceptScheme ) %>
+  <dcterms:publisher <%= @lang %>><%= @object %></dcterms:publisher>
+  <% end %>
+
+  <% for @object in query_rdf_objects( 'dc:creator', @conceptScheme ) %>
+  <dcterms:creator <%= @lang %>><%= @object %></dcterms:creator>
+  <% end %>
+
+  <% for @object in query_rdf_objects( 'dc:created', @conceptScheme ) %>
+  <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"><%= @object %></dcterms:created>
+  <% end %>
+
+  <dc:rights>Freely Available For Reuse</dc:rights>
+
+  <% for @object in query_rdf_objects( 'dcterms:subject', @conceptScheme ) %>
+  <dcterms:subject <%= @lang %>><%= @object %></dcterms:subject>
+  <% end %>
+  
+  <% for @object in query_rdf_objects( 'skos:hasTopConcept', @conceptScheme ) %>
+  <skos:hasTopConcept rdf:resource="<%= @object %>"/>
+  <% end %>
+</skos:ConceptScheme>

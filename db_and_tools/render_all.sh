@@ -1,7 +1,7 @@
 set -x
 output=skos_files15
 
-rm -rf "$output"
+rm -rf "$output/*"
 mkdir "$output"
 
 

@@ -42,7 +42,7 @@
     <% end %>
 
     <% for @object in query_rdf_objects( 'dcterms:created', @concept) %>
-    <skos:created><%= @object %></skos:created>
+    <dcterms:created rdf:dataType="http://www.w3.org/2001/XMLSchema#dateTime"><%= @object %></dcterms:created>
     <% end %>
 
     <% for @object in query_rdf_objects( 'dc:description', @concept) %>
