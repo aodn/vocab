@@ -3020,8 +3020,26 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liqui
 
 		<dropView viewName="_rdf" />
 		<dropView viewName="_rdf_concept" />
+		<dropView viewName="_rdf_concept_scheme" />
 		<dropView viewName="_skos_concept" />
 		
+		<createView viewName="vocabulary_term_topconceptof" replaceIfExists="true">
+			SELECT DISTINCT ovt.uid AS subject,
+			   vr.uid AS object
+			  FROM contr_vocab_db.internal_associated_terms iat
+			    LEFT JOIN contr_vocab_db.association_type at ON iat.association_type_id = at.id
+			    LEFT JOIN contr_vocab_db.vocabulary_term svt ON iat.subject_vocabulary_term_id = svt.id
+			    LEFT JOIN contr_vocab_db.vocabulary_term ovt ON iat.object_vocabulary_term_id = ovt.id
+			    LEFT JOIN contr_vocab_db.vocabulary_register vr ON ovt.vocabulary_register_id = vr.id
+			 WHERE iat.association_type_id = 1;
+		</createView>
+
+		<createView viewName="vocabulary_term_hastopconcept" replaceIfExists="true">
+			SELECT vocabulary_term_topconceptof.object as subject,
+			       vocabulary_term_topconceptof.subject as object
+			  FROM contr_vocab_db.vocabulary_term_topconceptof;
+		</createView>
+
 		<createView viewName="_skos_concept" replaceIfExists="true">
 			select
 				c.name as subject,
@@ -3151,11 +3169,86 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liqui
 			from _skos_concept_skos_topconceptof s
 			union all
 			select
+				s.subject,
+				'skos:topConceptOf'::varchar as predicate,
+				s.object
+			from vocabulary_term_topconceptof s
+			union all
+			select
 				c.subject,
 				'skos:scope_note'::varchar as predicate,
 				c.skos_scope_note
 			from _skos_concept c
-			where c.skos_scope_note is not null	and c.skos_scope_note != ''		
+			where c.skos_scope_note is not null	and c.skos_scope_note != ''
+		</createView>
+
+		<createView viewName="_rdf_concept_scheme">
+			select
+				s.subject as subject,
+				'rdf:type' as predicate,
+				s.rdf_type as object
+			from _skos_concept_scheme s
+			union all
+			select
+				s.subject,
+				'dcterms:issued' as predicate,
+				s.dcterms_issued::varchar as object
+			from _skos_concept_scheme s
+			where s.dcterms_issued is not null
+			union all
+			select
+				s.subject,
+				'dc:title' as predicate,
+				s.dc_title as object
+			from _skos_concept_scheme s
+			union all
+			select
+				s.subject,
+				'dc:description' as predicate,
+				s.dc_description as object
+			from _skos_concept_scheme s
+			union all
+			select
+				s.subject,
+				'dc:creator' as predicate,
+				s.dc_creator as object
+			from _skos_concept_scheme s
+			union all
+			select
+				s.subject,
+				'dc:created' as predicate,
+				s.dcterms_issued::varchar as object
+			from _skos_concept_scheme s
+			union all
+			select
+				s.subject,
+				'dc:publisher' as predicate,
+				s.dc_publisher as object
+			from _skos_concept_scheme s
+			union all
+			select
+				s.subject,
+				'dcterms:hasVersion' as predicate,
+				s.dcterms_hasversion as object
+			from _skos_concept_scheme s
+			where s.dcterms_hasversion is not null
+			union all
+			select
+				s.subject,
+				'skos:hasTopConcept' as predicate,
+				s.object
+			from _skos_concept_skos_hastopconcept s
+			union all
+			select
+				s.subject,
+				'skos:hasTopConcept' as predicate,
+				s.object
+			from vocabulary_term_hasTopConcept s
+			union all
+			select
+				'http://vocab.aodn.org.au/platform_classes/1',
+				'dcterms:subject' as predicate,
+				'platform'
 		</createView>
 
 		<createView viewName="_rdf">
