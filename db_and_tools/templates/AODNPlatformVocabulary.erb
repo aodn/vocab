@@ -58,6 +58,9 @@
     <skos:broadMatch>TODO</skos:broadMatch>
     <% end %>
 
+    <% for @object in query_rdf_objects( 'skos:scope_note', @concept) %>
+    <skos:scopeNote <%= @lang %>><%= @object %></skos:scopeNote>
+    <% end %>
 </skos:Concept>
 <% end %>
 
