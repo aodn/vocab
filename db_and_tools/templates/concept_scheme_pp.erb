@@ -33,6 +33,10 @@
 
   <dc:rights>Freely Available For Reuse</dc:rights>
 
+  <% for @object in query_rdf_objects( 'dcterms:subject', @conceptScheme ) %>
+  <dcterms:subject <%= @lang %>><%= @object %></dcterms:subject>
+  <% end %>
+  
   <% for @object in query_rdf_objects( 'skos:hasTopConcept', @conceptScheme ) %>
   <skos:hasTopConcept rdf:resource="<%= @object %>"/>
   <% end %>

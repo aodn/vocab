@@ -2917,6 +2917,11 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liqui
 				'skos:hasTopConcept' as predicate,
 				s.object
 			from _skos_concept_skos_hastopconcept s
+			union all
+			select
+				'http://vocab.aodn.org.au/platform_classes/1',
+				'dcterms:subject' as predicate,
+				'platform'
 		</createView>
 
 		<createView viewName="_rdf_concept">
