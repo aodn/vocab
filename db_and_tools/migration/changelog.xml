@@ -3022,6 +3022,8 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liqui
 		<dropView viewName="_rdf_concept" />
 		<dropView viewName="_rdf_concept_scheme" />
 		<dropView viewName="_skos_concept" />
+		<dropView viewName="_skos_concept_skos_narrower" />
+		<dropView viewName="_skos_concept_skos_broader" />
 		
 		<createView viewName="vocabulary_term_topconceptof" replaceIfExists="true">
 			SELECT DISTINCT ovt.uid AS subject,
@@ -3038,6 +3040,42 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liqui
 			SELECT vocabulary_term_topconceptof.object as subject,
 			       vocabulary_term_topconceptof.subject as object
 			  FROM contr_vocab_db.vocabulary_term_topconceptof;
+		</createView>
+
+		<createView viewName="vocabulary_term_broadmatch" replaceIfExists="true">
+			select vt.uid as subject, csc.name as object
+			  from contr_vocab_db.vocabulary_term_topconceptof tco
+			  join contr_vocab_db.vocabulary_term vt on tco.subject = vt.uid
+			  join contr_vocab_db.term_category_classification tcc on tcc.vocabulary_term_id = vt.id
+			  join contr_vocab_db.classification_scheme_category csc on tcc.classification_scheme_category_id = csc.id;
+		</createView>
+
+		<createView viewName="_skos_concept_skos_broader">
+			select
+				c1.name as subject,
+				c2.name as object
+			from classification_scheme_association a
+			join classification_scheme_category c1 on a.classification_scheme_category_id = c1.id
+			join classification_scheme_category c2 on a.parent_classification_scheme_category_id = c2.id
+			-- order by c2.name, c1.name
+
+			union all
+			select
+                svt.uid as subject,
+                -- 'skos:broader' as predicate,
+                ovt.uid as object
+            from internal_associated_terms iat
+            left join vocabulary_term svt on iat.subject_vocabulary_term_id = svt.id
+            left join vocabulary_term ovt on iat.object_vocabulary_term_id = ovt.id
+			left join association_type at on iat.association_type_id = at.id
+            where at.name = 'isInstanceOf'
+		</createView>
+
+		<createView viewName="_skos_concept_skos_narrower">
+			select
+				object as subject,
+				subject as object
+			from _skos_concept_skos_broader
 		</createView>
 
 		<createView viewName="_skos_concept" replaceIfExists="true">
@@ -3180,6 +3218,12 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liqui
 				c.skos_scope_note
 			from _skos_concept c
 			where c.skos_scope_note is not null	and c.skos_scope_note != ''
+			union all
+			select
+				bm.subject,
+				'skos:broadMatch'::varchar as predicate,
+				bm.object
+			from vocabulary_term_broadmatch bm
 		</createView>
 
 		<createView viewName="_rdf_concept_scheme">

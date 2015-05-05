@@ -55,7 +55,7 @@
     <% end %>
 
     <% for @object in query_rdf_objects( 'skos:broadMatch', @concept) %>
-    <skos:broadMatch>TODO</skos:broadMatch>
+    <skos:broadMatch><%= @object %></skos:broadMatch>
     <% end %>
 
     <% for @object in query_rdf_objects( 'skos:scope_note', @concept) %>
