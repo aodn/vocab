@@ -1,8 +1,5 @@
 <skos:ConceptScheme rdf:about="<%= @conceptScheme %>">
 
-  <csw:hierarchyRoot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</csw:hierarchyRoot>
-  <csw:hierarchyRootType rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
-
   <% for @object in query_rdf_objects( 'dc:title', @conceptScheme ) %>
   <dcterms:title <%= @lang %>><%= @object %></dcterms:title>
   <% end%>
@@ -41,5 +38,3 @@
   <skos:hasTopConcept rdf:resource="<%= @object %>"/>
   <% end %>
 </skos:ConceptScheme>
-
-
