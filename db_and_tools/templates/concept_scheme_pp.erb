@@ -11,7 +11,7 @@
   <dcterms:description <%= @lang %>><%= @object %></dcterms:description>
   <% end %>
 
-  <% for @object in query_rdf_objects( 'dc:contributor', @conceptScheme ) %>
+  <% for @object in query_rdf_objects( 'dc:creator', @conceptScheme ) %>
   <dcterms:contributor <%= @lang %>><%= @object %></dcterms:contributor>
   <% end %>
 
