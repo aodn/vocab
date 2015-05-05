@@ -31,14 +31,6 @@
   <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"><%= @object %></dcterms:created>
   <% end %>
 
-  <% for @object in query_rdf_objects( 'dcterms:hasVersion', @conceptScheme ) %>
-  <dcterms:hasVersion><%= @object %></dcterms:hasVersion>
-  <% end %>
-
-  <% for @object in query_rdf_objects( 'owl:versionInfo', @conceptScheme ) %>
-  <owl:versionInfo><%= @object %></owl:versionInfo>
-  <% end %>
-
   <dc:rights>Freely Available For Reuse</dc:rights>
 
   <% for @object in query_rdf_objects( 'skos:hasTopConcept', @conceptScheme ) %>
