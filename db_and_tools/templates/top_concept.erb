@@ -1,6 +1,8 @@
 
 <skos:TopConcept rdf:about="<%= @topConcept %>">
 
+<% fail "Used?" %>
+
     <% for @object in query_rdf_objects( 'skos:prefLabel', @topConcept ) %>
     <skos:prefLabel xml:lang="en"><%= @object %></skos:prefLabel>
     <% end %>
