@@ -3103,7 +3103,7 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liqui
 				vt.definition as skos_definition,
 				null as dcterms_issued,
 				-- should be issued ?
-				to_char(vt.date_added, 'YYYY-MM-D"T"HH24:MI:SS"Z"') AS dcterms_created,
+				to_char(vt.date_added, 'YYYY-MM-DD"T"HH24:MI:SS"Z"') AS dcterms_created,
 				p.name as dcterms_creator,
 			case
 			when rs.citation_string is not null
@@ -3160,7 +3160,7 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liqui
 			select
 				c.subject,
 				'dcterms:issued'::varchar as predicate,
-				to_char(c.dcterms_issued, 'YYYY-MM-D"T"HH24:MI:SS"Z"') as object
+				to_char(c.dcterms_issued, 'YYYY-MM-DD"T"HH24:MI:SS"Z"') as object
 			from _skos_concept c
 			where c.dcterms_issued is not null
 
@@ -3235,7 +3235,7 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liqui
 			select
 				s.name as subject,
 				'skos:ConceptScheme'::varchar as rdf_type,
-				to_char(s.date_added, 'YYYY-MM-D"T"HH24:MI:SS"Z"') as dcterms_issued,
+				to_char(s.date_added, 'YYYY-MM-DD"T"HH24:MI:SS"Z"') as dcterms_issued,
 				s.title as dc_title,
 				s.description as dc_description,
 				p.name as dc_creator,
@@ -3255,7 +3255,7 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liqui
 			select
 				vr.uid as subject,
 				'skos:ConceptScheme'::varchar as rdf_type,
-				to_char(vr.date, 'YYYY-MM-D"T"HH24:MI:SS"Z"') as dcterms_issued,
+				to_char(vr.date, 'YYYY-MM-DD"T"HH24:MI:SS"Z"') as dcterms_issued,
 				vr.name as dc_title,
 				vr.content_summary as dc_description,
 				p.name as dc_creator,
