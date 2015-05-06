@@ -1,5 +1,7 @@
 <skos:ConceptScheme rdf:about="<%= @conceptScheme %>">
 
+  <%  fail "Shouldn't use this" %>
+
   <% for @object in query_rdf_objects( 'dc:title', @conceptScheme ) %>
   <dc:title><%= @object %></dc:title>
   <% end%>

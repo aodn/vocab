@@ -4,7 +4,7 @@
 <% @conceptScheme = 'http://vocab.aodn.org.au/def/ClassScheme/parameter1' %>
 <% @lang = 'xml:lang="en"' %>
 
-<%= render "concept_scheme.erb" %>
+<%= render "concept_scheme_pp.erb" %>
 
 <% for @topConcept in query_sql_subject( %{
 	select r1.subject as subject
