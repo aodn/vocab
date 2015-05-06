@@ -3088,6 +3088,7 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liqui
 				c.date_added as dcterms_issued,
 				-- should be issued ?
 				null as dcterms_created,
+				null as dcterms_creator,
 				null as dc_source,
 				null as dc_publisher,
 				null as dc_description,
@@ -3103,6 +3104,7 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liqui
 				null as dcterms_issued,
 				-- should be issued ?
 				to_char(vt.date_added, 'YYYY-MM-D"T"HH24:MI:SS"Z"') AS dcterms_created,
+				p.name as dcterms_creator,
 			case
 			when rs.citation_string is not null
 				then rs.citation_string
@@ -3131,6 +3133,8 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liqui
 			-- vocabulary register organisation
 			left join responsible_party rp on vr.owner_responsible_party_id = rp.id
 			left join organisation vro on rp.organisation_id = vro.id
+
+			left join person p on  p.id = rp.person_id
 		</createView>
 
 		<createView viewName="_rdf_concept">
