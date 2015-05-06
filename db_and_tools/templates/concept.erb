@@ -45,6 +45,10 @@
     <dcterms:created rdf:dataType="http://www.w3.org/2001/XMLSchema#dateTime"><%= @object %></dcterms:created>
     <% end %>
 
+    <% for @object in query_rdf_objects( 'dcterms:creator', @concept) %>
+        <dcterms:creator><%= @object %></dcterms:creator>
+    <% end %>
+
     <% for @object in query_rdf_objects( 'dc:description', @concept) %>
     <dc:description><%= @object %></dc:description>
     <% end %>
