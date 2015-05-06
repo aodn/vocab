@@ -2,6 +2,8 @@
 <%= render "header.erb" %>
 
 <% @conceptScheme = 'http://vocab.aodn.org.au/def/ClassScheme/parameter1' %>
+<% @lang = 'xml:lang="en"' %>
+
 <%= render "concept_scheme.erb" %>
 
 <% for @topConcept in query_sql_subject( %{
