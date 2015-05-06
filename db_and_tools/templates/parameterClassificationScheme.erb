@@ -7,11 +7,10 @@
 <%= render "concept_scheme_pp.erb" %>
 
 <% for @concept in query_sql_subject( %{
-	select r1.subject as subject
-	from _rdf_m r1
-	left join _rdf_m r2 on r2.subject = r1.subject
-	where r1.predicate = 'skos:inScheme' and r1.object = '#{ @conceptScheme }'
-	and r2.predicate = 'rdf:type' and r2.object = 'skos:Concept' },
+	select csc.name as subject
+	  from classification_scheme_category csc
+	  join classification_scheme cs on csc.classification_scheme_id = cs.id
+	 where cs.name = '#{@conceptScheme}' },
 	nil )
 %>
 <%= render "concept.erb" %>
