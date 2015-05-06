@@ -3021,6 +3021,7 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liqui
 		<dropView viewName="_rdf" />
 		<dropView viewName="_rdf_concept" />
 		<dropView viewName="_rdf_concept_scheme" />
+		<dropView viewName="_skos_concept_scheme" />
 		<dropView viewName="_skos_concept" />
 		<dropView viewName="_skos_concept_skos_narrower" />
 		<dropView viewName="_skos_concept_skos_broader" />
@@ -3101,7 +3102,7 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liqui
 				vt.definition as skos_definition,
 				null as dcterms_issued,
 				-- should be issued ?
-				vt.date_added as dcterms_created,
+				to_char(vt.date_added, 'YYYY-MM-D"T"HH24:MI:SS"Z"') AS dcterms_created,
 			case
 			when rs.citation_string is not null
 				then rs.citation_string
@@ -3224,6 +3225,46 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liqui
 				'skos:broadMatch'::varchar as predicate,
 				bm.object
 			from vocabulary_term_broadmatch bm
+		</createView>
+
+		<createView viewName="_skos_concept_scheme">
+			select
+				s.name as subject,
+				'skos:ConceptScheme'::varchar as rdf_type,
+				to_char(s.date_added, 'YYYY-MM-D"T"HH24:MI:SS"Z"') as dcterms_issued,
+				s.title as dc_title,
+				s.description as dc_description,
+				o.name as dc_creator,
+				p.name as dc_publisher,
+				null as dcterms_hasversion
+
+			from classification_scheme s
+
+			join responsible_party rp on rp.id = s.responsible_party_id
+			join organisation o on rp.organisation_id = o.id
+
+			join responsible_party rp2 on rp2.id = s.responsible_party_id
+			join person p on rp2.person_id = p.id
+
+			union all
+
+			select
+				vr.uid as subject,
+				'skos:ConceptScheme'::varchar as rdf_type,
+				to_char(vr.date, 'YYYY-MM-D"T"HH24:MI:SS"Z"') as dcterms_issued,
+				vr.name as dc_title,
+				vr.content_summary as dc_description,
+				o.name as dc_creator,
+				p.name as dc_publisher,
+				null as dcterms_hasversion
+
+			from vocabulary_register vr
+
+			join responsible_party rp on rp.id = vr. owner_responsible_party_id
+			join organisation o on rp.organisation_id = o.id
+
+			join responsible_party rp2 on rp2.id = vr. owner_responsible_party_id
+			join person p on rp2.person_id = p.id
 		</createView>
 
 		<createView viewName="_rdf_concept_scheme">
