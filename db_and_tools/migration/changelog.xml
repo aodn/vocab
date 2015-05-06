@@ -3234,8 +3234,8 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liqui
 				to_char(s.date_added, 'YYYY-MM-D"T"HH24:MI:SS"Z"') as dcterms_issued,
 				s.title as dc_title,
 				s.description as dc_description,
-				o.name as dc_creator,
-				p.name as dc_publisher,
+				p.name as dc_creator,
+				o.name as dc_publisher,
 				null as dcterms_hasversion
 
 			from classification_scheme s
@@ -3254,8 +3254,8 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liqui
 				to_char(vr.date, 'YYYY-MM-D"T"HH24:MI:SS"Z"') as dcterms_issued,
 				vr.name as dc_title,
 				vr.content_summary as dc_description,
-				o.name as dc_creator,
-				p.name as dc_publisher,
+				p.name as dc_creator,
+				o.name as dc_publisher,
 				null as dcterms_hasversion
 
 			from vocabulary_register vr
