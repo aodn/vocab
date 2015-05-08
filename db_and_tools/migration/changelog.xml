@@ -3299,7 +3299,7 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liqui
 			union all
 			select
 				s.subject,
-				'dc:creator' as predicate,
+				'dcterms:creator' as predicate,
 				s.dc_creator as object
 			from _skos_concept_scheme s
 			union all

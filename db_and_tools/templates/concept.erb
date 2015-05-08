@@ -38,7 +38,7 @@
     <% end %>
 
     <% for @object in query_rdf_objects( 'dcterms:issued', @concept) %>
-    <skos:issued><%= @object %></skos:issued>
+    <dcterms:created rdf:dataType="http://www.w3.org/2001/XMLSchema#dateTime"><%= @object %></dcterms:created>
     <% end %>
 
     <% for @object in query_rdf_objects( 'dcterms:created', @concept) %>
