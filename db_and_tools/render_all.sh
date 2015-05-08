@@ -7,8 +7,8 @@ render() {
     local vocab=$1; shift
 
     echo "Rendering ${vocab}..."
-    ./render.rb -t ${vocab}.erb $@        > $output/${vocab}.xml
-    xmllint  --noout $output/${vocab}.xml
+    ./render.rb -t ${vocab}.erb $@ > $output/${vocab}.xml
+    xmllint --noout $output/${vocab}.xml
 }
 
 render AODNParameterVocabulary $@
