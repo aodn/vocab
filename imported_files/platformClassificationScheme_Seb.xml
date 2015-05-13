@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:cycAnnot="http://sw.cyc.com/CycAnnotations_v1#"
+    xmlns:cyc="http://sw.cyc.com/concept/"
+    xmlns:dbpedia="http://dbpedia.org/resource/"
+    xmlns:ctag="http://commontag.org/ns#"
+    xmlns:opencyc="http://sw.opencyc.org/concept/"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:csw="http://semantic-web.at/ontologies/csw.owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:freebase="http://rdf.freebase.com/ns/"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:tags="http://www.holygoat.co.uk/owl/redwood/0.1/tags/">
+<!-- Generated, 2015-05-11 11:48:48 +1000 -->
+<skos:ConceptScheme rdf:about="http://vocab.aodn.org.au/platform_classes/1">
+  <dcterms:title xml:lang="en">AODN platform category vocabulary</dcterms:title>
+  <dcterms:description xml:lang="en">A classification scheme to support faceted searching across platform types in the IMOS 123 Portal.</dcterms:description>
+  <dcterms:contributor xml:lang="en">Sebastien Mancini</dcterms:contributor>
+  <dcterms:creator xml:lang="en">Sebastien Mancini</dcterms:creator>
+  <dcterms:publisher xml:lang="en">eMarine Information Infrastructure (eMII)</dcterms:publisher>
+  <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-01T00:00:00Z</dcterms:created>
+  <dc:rights>Freely Available For Reuse</dc:rights>
+  <dcterms:subject xml:lang="en">platformcategory</dcterms:subject>
+  <skos:hasTopConcept rdf:resource="http://vocab.aodn.org.au/platform_classes/category/42"/>
+  <skos:hasTopConcept rdf:resource="http://vocab.aodn.org.au/platform_classes/category/44"/>
+  <skos:hasTopConcept rdf:resource="http://vocab.aodn.org.au/platform_classes/category/43"/>
+  <skos:hasTopConcept rdf:resource="http://vocab.aodn.org.au/platform_classes/category/36"/>
+  <skos:hasTopConcept rdf:resource="http://vocab.aodn.org.au/platform_classes/category/41"/>
+  <skos:hasTopConcept rdf:resource="http://vocab.aodn.org.au/platform_classes/category/39"/>
+  <skos:hasTopConcept rdf:resource="http://vocab.aodn.org.au/platform_classes/category/40"/>
+  <skos:hasTopConcept rdf:resource="http://vocab.aodn.org.au/platform_classes/category/35"/>
+  <skos:hasTopConcept rdf:resource="http://vocab.aodn.org.au/platform_classes/category/37"/>
+</skos:ConceptScheme>
+<skos:Concept rdf:about="http://vocab.aodn.org.au/platform_classes/category/43">
+    <skos:topConceptOf rdf:resource="http://vocab.aodn.org.au/platform_classes/1"/>
+    <skos:inScheme rdf:resource="http://vocab.aodn.org.au/platform_classes/1"/>
+    <skos:prefLabel xml:lang="en">Glider</skos:prefLabel>
+    <skos:definition xml:lang="en">This category contains vocabulary terms describing glider type of platform</skos:definition>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-01T00:00:00Z</dcterms:created>
+	<dcterms:creator xml:lang="en">Sebastien Mancini</dcterms:creator>
+	<dc:source>Australian Ocean Data Network platform category register</dc:source>
+    <dc:publisher>eMarine Information Infrastructure (eMII)</dc:publisher>
+</skos:Concept>
+<skos:Concept rdf:about="http://vocab.aodn.org.au/platform_classes/category/35">
+    <skos:topConceptOf rdf:resource="http://vocab.aodn.org.au/platform_classes/1"/>
+    <skos:inScheme rdf:resource="http://vocab.aodn.org.au/platform_classes/1"/>
+    <skos:prefLabel xml:lang="en">AUV</skos:prefLabel>
+    <skos:definition xml:lang="en">This category contains vocabulary terms describing AUV type of platforms</skos:definition>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-01T00:00:00Z</dcterms:created>
+	<dcterms:creator xml:lang="en">Sebastien Mancini</dcterms:creator>
+	<dc:source>Australian Ocean Data Network platform category register</dc:source>
+    <dc:publisher>eMarine Information Infrastructure (eMII)</dc:publisher>
+</skos:Concept>
+<skos:Concept rdf:about="http://vocab.aodn.org.au/platform_classes/category/36">
+    <skos:topConceptOf rdf:resource="http://vocab.aodn.org.au/platform_classes/1"/>
+    <skos:inScheme rdf:resource="http://vocab.aodn.org.au/platform_classes/1"/>
+    <skos:prefLabel xml:lang="en">Fixed station</skos:prefLabel>
+    <skos:definition xml:lang="en">This category contains vocabulary terms describing fixed stations type of platform</skos:definition>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-01T00:00:00Z</dcterms:created>
+	<dcterms:creator xml:lang="en">Sebastien Mancini</dcterms:creator>
+	<dc:source>Australian Ocean Data Network platform category register</dc:source>
+    <dc:publisher>eMarine Information Infrastructure (eMII)</dc:publisher>
+</skos:Concept>
+<skos:Concept rdf:about="http://vocab.aodn.org.au/platform_classes/category/37">
+    <skos:topConceptOf rdf:resource="http://vocab.aodn.org.au/platform_classes/1"/>
+    <skos:inScheme rdf:resource="http://vocab.aodn.org.au/platform_classes/1"/>
+    <skos:prefLabel xml:lang="en">Float</skos:prefLabel>
+    <skos:definition xml:lang="en">This category contains vocabulary terms describing profiling float type of platform</skos:definition>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-01T00:00:00Z</dcterms:created>
+	<dcterms:creator xml:lang="en">Sebastien Mancini</dcterms:creator>
+	<dc:source>Australian Ocean Data Network platform category register</dc:source>
+    <dc:publisher>eMarine Information Infrastructure (eMII)</dc:publisher>
+</skos:Concept>
+<skos:Concept rdf:about="http://vocab.aodn.org.au/platform_classes/category/40">
+    <skos:topConceptOf rdf:resource="http://vocab.aodn.org.au/platform_classes/1"/>
+    <skos:inScheme rdf:resource="http://vocab.aodn.org.au/platform_classes/1"/>
+    <skos:prefLabel xml:lang="en">Biological platform</skos:prefLabel>
+    <skos:definition xml:lang="en">This category contains vocabulary terms describing animal type of platform</skos:definition>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-01T00:00:00Z</dcterms:created>
+	<dcterms:creator xml:lang="en">Sebastien Mancini</dcterms:creator>
+	<dc:source>Australian Ocean Data Network platform category register</dc:source>
+    <dc:publisher>eMarine Information Infrastructure (eMII)</dc:publisher>
+</skos:Concept>
+<skos:Concept rdf:about="http://vocab.aodn.org.au/platform_classes/category/41">
+    <skos:topConceptOf rdf:resource="http://vocab.aodn.org.au/platform_classes/1"/>
+    <skos:inScheme rdf:resource="http://vocab.aodn.org.au/platform_classes/1"/>
+    <skos:prefLabel xml:lang="en">Satellite</skos:prefLabel>
+    <skos:definition xml:lang="en">This category contains vocabulary terms describing satellite type of platform</skos:definition>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-01T00:00:00Z</dcterms:created>
+	<dcterms:creator xml:lang="en">Sebastien Mancini</dcterms:creator>
+	<dc:source>Australian Ocean Data Network platform category register</dc:source>
+    <dc:publisher>eMarine Information Infrastructure (eMII)</dc:publisher>
+</skos:Concept>
+<skos:Concept rdf:about="http://vocab.aodn.org.au/platform_classes/category/42">
+    <skos:topConceptOf rdf:resource="http://vocab.aodn.org.au/platform_classes/1"/>
+    <skos:inScheme rdf:resource="http://vocab.aodn.org.au/platform_classes/1"/>
+    <skos:prefLabel xml:lang="en">Radar</skos:prefLabel>
+    <skos:definition xml:lang="en">This category contains vocabulary terms describing radar type of platform</skos:definition>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-01T00:00:00Z</dcterms:created>
+	<dcterms:creator xml:lang="en">Sebastien Mancini</dcterms:creator>
+	<dc:source>Australian Ocean Data Network platform category register</dc:source>
+    <dc:publisher>eMarine Information Infrastructure (eMII)</dc:publisher>
+</skos:Concept>
+<skos:Concept rdf:about="http://vocab.aodn.org.au/platform_classes/category/44">
+    <skos:topConceptOf rdf:resource="http://vocab.aodn.org.au/platform_classes/1"/>
+    <skos:inScheme rdf:resource="http://vocab.aodn.org.au/platform_classes/1"/>
+    <skos:prefLabel xml:lang="en">Mooring and buoy</skos:prefLabel>
+    <skos:definition xml:lang="en">This category contains vocabulary terms describing mooring type of platform</skos:definition>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-01T00:00:00Z</dcterms:created>
+	<dcterms:creator xml:lang="en">Sebastien Mancini</dcterms:creator>
+	<dc:source>Australian Ocean Data Network platform category register</dc:source>
+    <dc:publisher>eMarine Information Infrastructure (eMII)</dc:publisher>
+</skos:Concept>
+<skos:Concept rdf:about="http://vocab.aodn.org.au/platform_classes/category/39">
+    <skos:topConceptOf rdf:resource="http://vocab.aodn.org.au/platform_classes/1"/>
+    <skos:inScheme rdf:resource="http://vocab.aodn.org.au/platform_classes/1"/>
+    <skos:prefLabel xml:lang="en">Vessel</skos:prefLabel>
+    <skos:definition xml:lang="en">This category contains vocabulary terms describing ship type of platform</skos:definition>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-01T00:00:00Z</dcterms:created>
+	<dcterms:creator xml:lang="en">Sebastien Mancini</dcterms:creator>
+	<dc:source>Australian Ocean Data Network platform category register</dc:source>
+    <dc:publisher>eMarine Information Infrastructure (eMII)</dc:publisher>
+</skos:Concept>
+</rdf:RDF>
