@@ -53,5 +53,8 @@
     <dc:description><%= @object %></dc:description>
     <% end %>
 
+    <% for @object in query_rdf_objects( 'skos:broadMatch', @concept) %>
+    <skos:broadMatch rdf:resource="<%= @object %>"/>
+    <% end %>
 </skos:Concept>
 

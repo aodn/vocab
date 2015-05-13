@@ -3034,7 +3034,12 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liqui
 			    LEFT JOIN contr_vocab_db.vocabulary_term svt ON iat.subject_vocabulary_term_id = svt.id
 			    LEFT JOIN contr_vocab_db.vocabulary_term ovt ON iat.object_vocabulary_term_id = ovt.id
 			    LEFT JOIN contr_vocab_db.vocabulary_register vr ON ovt.vocabulary_register_id = vr.id
-			 WHERE iat.association_type_id = 1;
+			 WHERE iat.association_type_id = 1 <!-- isInstanceOf -->
+			 UNION ALL
+			 SELECT vt.uid AS subject,
+			    vr.uid AS object
+			   FROM vocabulary_term vt
+			      JOIN vocabulary_register vr ON vt.vocabulary_register_id = vr.id
 		</createView>
 
 		<createView viewName="vocabulary_term_hastopconcept" replaceIfExists="true">
@@ -3048,7 +3053,14 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liqui
 			  from contr_vocab_db.vocabulary_term_topconceptof tco
 			  join contr_vocab_db.vocabulary_term vt on tco.subject = vt.uid
 			  join contr_vocab_db.term_category_classification tcc on tcc.vocabulary_term_id = vt.id
-			  join contr_vocab_db.classification_scheme_category csc on tcc.classification_scheme_category_id = csc.id;
+			  join contr_vocab_db.classification_scheme_category csc on tcc.classification_scheme_category_id = csc.id
+  			UNION ALL
+			SELECT vt.uid AS subject,
+                    csc.name AS object
+                   FROM contr_vocab_db.vocabulary_term vt
+              	   JOIN contr_vocab_db.term_category_classification tcc ON tcc.vocabulary_term_id = vt.id
+         		   JOIN contr_vocab_db.classification_scheme_category csc ON tcc.classification_scheme_category_id = csc.id
+                            where vocabulary_type_id = 1; <!-- Parameter vocab -->
 		</createView>
 
 		<createView viewName="_skos_concept_skos_broader">
