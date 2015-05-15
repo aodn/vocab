@@ -3021,6 +3021,7 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liqui
 		<dropView viewName="_rdf" />
 		<dropView viewName="_rdf_concept" />
 		<dropView viewName="_rdf_concept_scheme" />
+		<dropView viewName="_skos_concept_scheme" />
 		<dropView viewName="_skos_concept" />
 		<dropView viewName="_skos_concept_skos_narrower" />
 		<dropView viewName="_skos_concept_skos_broader" />
@@ -3087,6 +3088,7 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liqui
 				c.date_added as dcterms_issued,
 				-- should be issued ?
 				null as dcterms_created,
+				null as dcterms_creator,
 				null as dc_source,
 				null as dc_publisher,
 				null as dc_description,
@@ -3101,7 +3103,8 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liqui
 				vt.definition as skos_definition,
 				null as dcterms_issued,
 				-- should be issued ?
-				vt.date_added as dcterms_created,
+				to_char(vt.date_added, 'YYYY-MM-DD"T"HH24:MI:SS"Z"') AS dcterms_created,
+				p.name as dcterms_creator,
 			case
 			when rs.citation_string is not null
 				then rs.citation_string
@@ -3130,6 +3133,28 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liqui
 			-- vocabulary register organisation
 			left join responsible_party rp on vr.owner_responsible_party_id = rp.id
 			left join organisation vro on rp.organisation_id = vro.id
+
+			left join person p on  p.id = rp.person_id
+		</createView>
+
+		<createView viewName="_platform_vocabulary_topconceptof" replaceIfExists="true">
+			select c.subject, cis.object
+			  from _skos_concept c
+			  join _skos_concept_skos_inscheme cis on c.subject = cis.subject
+			 where cis.object = 'http://vocab.aodn.org.au/platform/1'
+			   and c.subject not in (
+					SELECT svt.uid
+					   FROM contr_vocab_db.internal_associated_terms iat
+					     LEFT JOIN contr_vocab_db.vocabulary_term svt ON iat.subject_vocabulary_term_id = svt.id
+					     LEFT JOIN contr_vocab_db.vocabulary_term ovt ON iat.object_vocabulary_term_id = ovt.id
+					     LEFT JOIN contr_vocab_db.association_type at ON iat.association_type_id = at.id
+					  WHERE at.name::text = 'isInstanceOf'::text)
+			  order by subject;
+		</createView>
+
+		<createView viewName="_platform_vocabulary_hastopconcept" replaceIfExists="true">
+			select object as subject, subject as object
+			  from _platform_vocabulary_topconceptof;
 		</createView>
 
 		<createView viewName="_rdf_concept">
@@ -3155,7 +3180,7 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liqui
 			select
 				c.subject,
 				'dcterms:issued'::varchar as predicate,
-				c.dcterms_issued::varchar as object
+				to_char(c.dcterms_issued, 'YYYY-MM-DD"T"HH24:MI:SS"Z"') as object
 			from _skos_concept c
 			where c.dcterms_issued is not null
 
@@ -3224,6 +3249,52 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liqui
 				'skos:broadMatch'::varchar as predicate,
 				bm.object
 			from vocabulary_term_broadmatch bm
+			union all
+			select
+			    pvtco.subject,
+			    'skos:topConceptOf'::varchar as predicate,
+				pvtco.object
+			from _platform_vocabulary_topconceptof pvtco
+		</createView>
+
+		<createView viewName="_skos_concept_scheme">
+			select
+				s.name as subject,
+				'skos:ConceptScheme'::varchar as rdf_type,
+				to_char(s.date_added, 'YYYY-MM-DD"T"HH24:MI:SS"Z"') as dcterms_issued,
+				s.title as dc_title,
+				s.description as dc_description,
+				p.name as dc_creator,
+				o.name as dc_publisher,
+				null as dcterms_hasversion
+
+			from classification_scheme s
+
+			join responsible_party rp on rp.id = s.responsible_party_id
+			join organisation o on rp.organisation_id = o.id
+
+			join responsible_party rp2 on rp2.id = s.responsible_party_id
+			join person p on rp2.person_id = p.id
+
+			union all
+
+			select
+				vr.uid as subject,
+				'skos:ConceptScheme'::varchar as rdf_type,
+				to_char(vr.date, 'YYYY-MM-DD"T"HH24:MI:SS"Z"') as dcterms_issued,
+				vr.name as dc_title,
+				vr.content_summary as dc_description,
+				p.name as dc_creator,
+				o.name as dc_publisher,
+				null as dcterms_hasversion
+
+			from vocabulary_register vr
+
+			join responsible_party rp on rp.id = vr. owner_responsible_party_id
+			join organisation o on rp.organisation_id = o.id
+
+			join responsible_party rp2 on rp2.id = vr. owner_responsible_party_id
+			join person p on rp2.person_id = p.id
 		</createView>
 
 		<createView viewName="_rdf_concept_scheme">
@@ -3254,7 +3325,7 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liqui
 			union all
 			select
 				s.subject,
-				'dc:creator' as predicate,
+				'dcterms:creator' as predicate,
 				s.dc_creator as object
 			from _skos_concept_scheme s
 			union all
@@ -3293,11 +3364,18 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liqui
 				'http://vocab.aodn.org.au/platform_classes/1',
 				'dcterms:subject' as predicate,
 				'platform'
+			union all
+			select
+			    pvhtc.subject,
+			    'skos:hasTopConcept'::varchar as predicate,
+				pvhtc.object
+			from _platform_vocabulary_hastopconcept pvhtc
 		</createView>
 
 		<createView viewName="_rdf">
-			select * from _rdf_concept_scheme
-			union all select * from _rdf_concept
+			select distinct * from _rdf_concept_scheme
+			union all
+			select distinct * from _rdf_concept
 		</createView>
 
 		<sql>
