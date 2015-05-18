@@ -3025,8 +3025,11 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liqui
 		<dropView viewName="_skos_concept" />
 		<dropView viewName="_skos_concept_skos_narrower" />
 		<dropView viewName="_skos_concept_skos_broader" />
+		<dropView viewName="vocabulary_term_broadmatch" />
+		<dropView viewName="vocabulary_term_hastopconcept" />
+		<dropView viewName="vocabulary_term_topconceptof" />
 		
-		<createView viewName="vocabulary_term_topconceptof" replaceIfExists="true">
+		<createView viewName="vocabulary_term_topconceptof">
 			SELECT DISTINCT ovt.uid AS subject,
 			   vr.uid AS object
 			  FROM contr_vocab_db.internal_associated_terms iat
@@ -3042,13 +3045,13 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liqui
 			      JOIN vocabulary_register vr ON vt.vocabulary_register_id = vr.id
 		</createView>
 
-		<createView viewName="vocabulary_term_hastopconcept" replaceIfExists="true">
+		<createView viewName="vocabulary_term_hastopconcept">
 			SELECT vocabulary_term_topconceptof.object as subject,
 			       vocabulary_term_topconceptof.subject as object
 			  FROM contr_vocab_db.vocabulary_term_topconceptof;
 		</createView>
 
-		<createView viewName="vocabulary_term_broadmatch" replaceIfExists="true">
+		<createView viewName="vocabulary_term_broadmatch">
 			select vt.uid as subject, csc.name as object
 			  from contr_vocab_db.vocabulary_term_topconceptof tco
 			  join contr_vocab_db.vocabulary_term vt on tco.subject = vt.uid
