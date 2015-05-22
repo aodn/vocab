@@ -1,0 +1,67 @@
+<%= render "header.erb" %>
+
+<% @conceptScheme = 'http://vocab.aodn.org.au/def/instrument' %>
+<% @lang = 'xml:lang="en"' %>
+
+<%= render "concept_scheme_pp.erb" %>
+
+<% for @concept in query_sql_subject( %{
+    select r1.subject as subject
+    from _rdf_m r1
+    left join _rdf_m r2 on r2.subject = r1.subject
+    where r1.predicate = 'skos:inScheme' and r1.object = '#{ @conceptScheme }'
+    and r2.predicate = 'rdf:type' and r2.object = 'skos:Concept' },
+    nil )%>
+
+<skos:Concept rdf:about="<%= @concept %>">
+
+    <% for @object in query_rdf_objects( 'skos:prefLabel', @concept) %>
+    <skos:prefLabel <%= @lang %>><%= @object %></skos:prefLabel>
+    <% end %>
+
+    <% for @object in query_rdf_objects( 'skos:topConceptOf', @concept) %>
+    <skos:topConceptOf rdf:resource="<%= @object %>"/>
+    <% end %>
+
+    <skos:inScheme rdf:resource="<%= @conceptScheme %>"/>
+
+    <% for @object in query_rdf_objects( 'dcterms:created', @concept) %>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"><%= @object %></dcterms:created>
+    <% end %>
+
+    <% for @object in query_rdf_objects( 'dc:creator', @concept) %>
+    <dcterms:creator><%= @object %></dcterms:creator>
+    <% end %>
+
+    <% for @object in query_rdf_objects( 'skos:definition', @concept) %>
+    <skos:definition <%= @lang %>><%= @object %></skos:definition>
+    <% end %>
+
+    <% for @object in query_rdf_objects( 'dc:source', @concept) %>
+    <dc:source><%= @object %></dc:source>
+    <% end %>
+
+    <% for @object in query_rdf_objects( 'dc:publisher', @concept) %>
+    <dc:publisher><%= @object %></dc:publisher>
+    <% end %>
+
+    <% for @object in query_rdf_objects( 'skos:narrower', @concept) %>
+    <skos:narrower rdf:resource="<%= @object %>"/>
+    <% end %>
+
+    <% for @object in query_rdf_objects( 'skos:broader', @concept) %>
+    <skos:broader rdf:resource="<%= @object %>"/>
+    <% end %>
+
+    <% for @object in query_rdf_objects( 'skos:broadMatch', @concept) %>
+    <skos:broadMatch rdf:resource="<%= @object %>"/>
+    <% end %>
+
+    <% for @object in query_rdf_objects( 'skos:scope_note', @concept) %>
+    <skos:scopeNote <%= @lang %>><%= @object %></skos:scopeNote>
+    <% end %>
+</skos:Concept>
+<% end %>
+
+<%= render "footer.erb" %>
+

@@ -15,6 +15,7 @@ render AODNParameterVocabulary $@
 render parameterClassificationScheme $@
 render AODNPlatformVocabulary $@
 render platformClassificationScheme $@
+render AODNInstrumentVocabulary $@
 
 find -type f -size 0b -iname "*" -exec rm {} \;
 rm $output.tgz
