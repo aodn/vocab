@@ -3410,56 +3410,11 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liqui
 		<dropView viewName="_rdf_concept" />
 		<dropView viewName="_rdf_concept_scheme" />
 		<dropView viewName="_skos_concept_scheme" />
+		<dropView viewName="_platform_vocabulary_hastopconcept" />
+		<dropView viewName="_platform_vocabulary_topconceptof" />
 		<dropView viewName="_skos_concept" />
-		<dropView viewName="_skos_concept_skos_narrower" />
-		<dropView viewName="_skos_concept_skos_broader" />
-		<dropView viewName="vocabulary_term_broadmatch" />
-		<dropView viewName="vocabulary_term_hastopconcept" />
-		<dropView viewName="vocabulary_term_topconceptof" />
-
-		<createView viewName="vocabulary_term_topconceptof">
-			SELECT DISTINCT ovt.uid AS subject,
-			   vr.uid AS object
-			  FROM contr_vocab_db.internal_associated_terms iat
-			    LEFT JOIN contr_vocab_db.association_type at ON iat.association_type_id = at.id
-			    LEFT JOIN contr_vocab_db.vocabulary_term svt ON iat.subject_vocabulary_term_id = svt.id
-			    LEFT JOIN contr_vocab_db.vocabulary_term ovt ON iat.object_vocabulary_term_id = ovt.id
-			    LEFT JOIN contr_vocab_db.vocabulary_register vr ON ovt.vocabulary_register_id = vr.id
-			 WHERE iat.association_type_id = 1 <!-- isInstanceOf -->
-			 UNION ALL
-			 SELECT vt.uid AS subject,
-			    vr.uid AS object
-			   FROM vocabulary_term vt
-			      JOIN vocabulary_register vr ON vt.vocabulary_register_id = vr.id
-		</createView>
-
-		<createView viewName="_skos_concept_skos_broader">
-			select
-				c1.name as subject,
-				c2.name as object
-			from classification_scheme_association a
-			join classification_scheme_category c1 on a.classification_scheme_category_id = c1.id
-			join classification_scheme_category c2 on a.parent_classification_scheme_category_id = c2.id
-			-- order by c2.name, c1.name
-
-			union all
-			select
-                svt.uid as subject,
-                -- 'skos:broader' as predicate,
-                ovt.uid as object
-            from internal_associated_terms iat
-            left join vocabulary_term svt on iat.subject_vocabulary_term_id = svt.id
-            left join vocabulary_term ovt on iat.object_vocabulary_term_id = ovt.id
-			left join association_type at on iat.association_type_id = at.id
-            where at.name = 'isInstanceOf'
-		</createView>
-
-		<createView viewName="_skos_concept_skos_narrower">
-			select
-				object as subject,
-				subject as object
-			from _skos_concept_skos_broader
-		</createView>
+		<dropView viewName="_skos_concept_skos_topconceptof" />
+		<dropView viewName="_skos_concept_skos_hastopconcept" />
 
 		<createView viewName="_skos_concept" replaceIfExists="true">
 			select
@@ -3540,6 +3495,19 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liqui
 					     LEFT JOIN contr_vocab_db.vocabulary_term ovt ON iat.object_vocabulary_term_id = ovt.id
 					     LEFT JOIN contr_vocab_db.association_type at ON iat.association_type_id = at.id
 					  WHERE at.name::text = 'isInstanceOf'::text)
+
+			union all
+			select c.subject, cis.object
+			  from _skos_concept c
+			  join _skos_concept_skos_inscheme cis on c.subject = cis.subject
+			 where cis.object = 'http://vocab.aodn.org.au/def/instrument'
+			   and c.subject not in (
+					SELECT svt.uid
+					   FROM contr_vocab_db.internal_associated_terms iat
+					     LEFT JOIN contr_vocab_db.vocabulary_term svt ON iat.subject_vocabulary_term_id = svt.id
+					     LEFT JOIN contr_vocab_db.vocabulary_term ovt ON iat.object_vocabulary_term_id = ovt.id
+					     LEFT JOIN contr_vocab_db.association_type at ON iat.association_type_id = at.id
+					  WHERE at.name::text = 'isTypeOf'::text)
 			  order by subject
 		</createView>
 
