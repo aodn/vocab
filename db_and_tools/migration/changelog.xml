@@ -3401,7 +3401,7 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liqui
 		</sql>
 	</changeSet>
 
-	<changeSet author="dnahodil and anguss" id="0056">
+	<changeSet author="dnahodil" id="0056">
 		<sql>
 			drop materialized view _rdf_m;
 		</sql>
@@ -3415,6 +3415,34 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liqui
 		<dropView viewName="_skos_concept" />
 		<dropView viewName="_skos_concept_skos_topconceptof" />
 		<dropView viewName="_skos_concept_skos_hastopconcept" />
+		<dropView viewName="_skos_concept_skos_narrower" />
+		<dropView viewName="_skos_concept_skos_broader" />
+
+		<createView viewName="_skos_concept_skos_broader">
+			select
+				c1.name as subject,
+				c2.name as object
+			from classification_scheme_association a
+			join classification_scheme_category c1 on a.classification_scheme_category_id = c1.id
+			join classification_scheme_category c2 on a.parent_classification_scheme_category_id = c2.id
+
+			union all
+			select
+			    svt.uid as subject,
+			    ovt.uid as object
+			from internal_associated_terms iat
+			left join vocabulary_term svt on iat.subject_vocabulary_term_id = svt.id
+			left join vocabulary_term ovt on iat.object_vocabulary_term_id = ovt.id
+			left join association_type at on iat.association_type_id = at.id
+			where at.name = 'isInstanceOf'
+		</createView>
+
+		<createView viewName="_skos_concept_skos_narrower">
+			select
+				object as subject,
+				subject as object
+			from _skos_concept_skos_broader
+		</createView>
 
 		<createView viewName="_skos_concept" replaceIfExists="true">
 			select
