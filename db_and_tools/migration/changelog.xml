@@ -3028,7 +3028,7 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liqui
 		<dropView viewName="vocabulary_term_broadmatch" />
 		<dropView viewName="vocabulary_term_hastopconcept" />
 		<dropView viewName="vocabulary_term_topconceptof" />
-		
+
 		<createView viewName="vocabulary_term_topconceptof">
 			SELECT DISTINCT ovt.uid AS subject,
 			   vr.uid AS object
@@ -3417,6 +3417,50 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liqui
 		<dropView viewName="_skos_concept_skos_hastopconcept" />
 		<dropView viewName="_skos_concept_skos_narrower" />
 		<dropView viewName="_skos_concept_skos_broader" />
+		<dropView viewName="vocabulary_term_broadmatch" />
+		<dropView viewName="vocabulary_term_hastopconcept" />
+		<dropView viewName="vocabulary_term_topconceptof" />
+		
+		<createView viewName="vocabulary_term_topconceptof">
+			SELECT DISTINCT ovt.uid AS subject,
+			   vr.uid AS object
+			  FROM contr_vocab_db.internal_associated_terms iat
+			    LEFT JOIN contr_vocab_db.association_type at ON iat.association_type_id = at.id
+			    LEFT JOIN contr_vocab_db.vocabulary_term svt ON iat.subject_vocabulary_term_id = svt.id
+			    LEFT JOIN contr_vocab_db.vocabulary_term ovt ON iat.object_vocabulary_term_id = ovt.id
+			    LEFT JOIN contr_vocab_db.vocabulary_register vr ON ovt.vocabulary_register_id = vr.id
+			 WHERE iat.association_type_id = 1 <!-- isInstanceOf -->
+			 UNION ALL
+			 SELECT DISTINCT ovt.uid AS subject,
+			   vr.uid AS object
+			  FROM contr_vocab_db.internal_associated_terms iat
+			    LEFT JOIN contr_vocab_db.association_type at ON iat.association_type_id = at.id
+			    LEFT JOIN contr_vocab_db.vocabulary_term svt ON iat.subject_vocabulary_term_id = svt.id
+			    LEFT JOIN contr_vocab_db.vocabulary_term ovt ON iat.object_vocabulary_term_id = ovt.id
+			    LEFT JOIN contr_vocab_db.vocabulary_register vr ON ovt.vocabulary_register_id = vr.id
+			 WHERE iat.association_type_id = 3 <!-- isTypeOf -->
+		</createView>
+
+		<createView viewName="vocabulary_term_hastopconcept">
+			SELECT vocabulary_term_topconceptof.object as subject,
+			       vocabulary_term_topconceptof.subject as object
+			  FROM contr_vocab_db.vocabulary_term_topconceptof;
+		</createView>
+
+		<createView viewName="vocabulary_term_broadmatch">
+			select vt.uid as subject, csc.name as object
+			  from contr_vocab_db.vocabulary_term_topconceptof tco
+			  join contr_vocab_db.vocabulary_term vt on tco.subject = vt.uid
+			  join contr_vocab_db.term_category_classification tcc on tcc.vocabulary_term_id = vt.id
+			  join contr_vocab_db.classification_scheme_category csc on tcc.classification_scheme_category_id = csc.id
+			UNION ALL
+			SELECT vt.uid AS subject,
+			       csc.name AS object
+			       FROM contr_vocab_db.vocabulary_term vt
+			       JOIN contr_vocab_db.term_category_classification tcc ON tcc.vocabulary_term_id = vt.id
+			       JOIN contr_vocab_db.classification_scheme_category csc ON tcc.classification_scheme_category_id = csc.id
+			       WHERE vocabulary_type_id = 1; <!-- Parameter vocab -->
+		</createView>
 
 		<createView viewName="_skos_concept_skos_broader">
 			select
@@ -3435,6 +3479,16 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liqui
 			left join vocabulary_term ovt on iat.object_vocabulary_term_id = ovt.id
 			left join association_type at on iat.association_type_id = at.id
 			where at.name = 'isInstanceOf'
+
+			union all
+			select
+			    svt.uid as subject,
+			    ovt.uid as object
+			from internal_associated_terms iat
+			left join vocabulary_term svt on iat.subject_vocabulary_term_id = svt.id
+			left join vocabulary_term ovt on iat.object_vocabulary_term_id = ovt.id
+			left join association_type at on iat.association_type_id = at.id
+			where at.name = 'isTypeOf'
 		</createView>
 
 		<createView viewName="_skos_concept_skos_narrower">
@@ -3512,20 +3566,7 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liqui
 			where a.parent_classification_scheme_category_id is null
 
 			union all
-			select c.subject, cis.object
-			  from _skos_concept c
-			  join _skos_concept_skos_inscheme cis on c.subject = cis.subject
-			 where cis.object = 'http://vocab.aodn.org.au/platform/1'
-			   and c.subject not in (
-					SELECT svt.uid
-					   FROM contr_vocab_db.internal_associated_terms iat
-					     LEFT JOIN contr_vocab_db.vocabulary_term svt ON iat.subject_vocabulary_term_id = svt.id
-					     LEFT JOIN contr_vocab_db.vocabulary_term ovt ON iat.object_vocabulary_term_id = ovt.id
-					     LEFT JOIN contr_vocab_db.association_type at ON iat.association_type_id = at.id
-					  WHERE at.name::text = 'isInstanceOf'::text)
-
-			union all
-			select c.subject, cis.object
+			select c.subject as object, cis.object as subject
 			  from _skos_concept c
 			  join _skos_concept_skos_inscheme cis on c.subject = cis.subject
 			 where cis.object = 'http://vocab.aodn.org.au/def/instrument'
@@ -3619,12 +3660,21 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liqui
 				'skos:topConceptOf'::varchar as predicate,
 				s.object
 			from _skos_concept_skos_topconceptof s
+			where s.subject::text !~~ '%instrument%'::text
+			union all
+			select
+				s.object,
+				'skos:topConceptOf'::varchar as predicate,
+				s.subject
+			from _skos_concept_skos_topconceptof s
+			where s.subject::text ~~ '%instrument%'::text
 			union all
 			select
 				s.subject,
 				'skos:topConceptOf'::varchar as predicate,
 				s.object
 			from vocabulary_term_topconceptof s
+			where s.subject::text !~~ '%instrument%'::text <!-- Ugh. Just to get instrument vocab working -->
 			union all
 			select
 				c.subject,
@@ -3733,9 +3783,17 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liqui
 			union all
 			select
 				s.subject,
-				'skos:hasTopConcept' as predicate,
+				'skos:topConceptOf'::varchar as predicate,
 				s.object
-			from _skos_concept_skos_hastopconcept s
+			from _skos_concept_skos_topconceptof s
+			where s.subject::text !~~ '%instrument%'::text
+			union all
+			select
+				s.object,
+				'skos:topConceptOf'::varchar as predicate,
+				s.subject 
+			from _skos_concept_skos_topconceptof s
+			where s.subject::text ~~ '%instrument%'::text
 			union all
 			select
 				s.subject,
@@ -3756,7 +3814,7 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liqui
 		</createView>
 
 		<sql>
-			create materialized view _rdf_m as select * from _rdf order by predicate, object, subject;
+			create materialized view _rdf_m as select distinct * from _rdf order by predicate, object, subject;
 			create index on _rdf_m( object );
 			create index on _rdf_m( subject );
 			create index on _rdf_m( predicate );
