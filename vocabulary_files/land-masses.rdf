@@ -1,0 +1,2149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:ns2="http://www.w3.org/2004/02/skos/core#"
+	xmlns:ns3="http://purl.org/dc/elements/1.1/"
+	xmlns:ns6="http://www.opengis.net/gml#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417144217391">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417144217391">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx1"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx1">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+	<ns3:title>land-masses</ns3:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417144222013">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417144217391">
+	<ns2:prefLabel xml:lang="en">Marine Features (Australia) | Rottnest Island, WA</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx2">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417144217391">
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417144222013">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx2"/>
+	<ns2:prefLabel xml:lang="en">Countries | Australia</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417144232638">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx3">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417144232638">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx3"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx4">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417144232638">
+	<ns2:prefLabel xml:lang="en">States, Territories (Australia) | Western Australia</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417144243911">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx4">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417144243911">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx4"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx5">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417144258707">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx5"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx5">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417144243911">
+	<ns2:prefLabel xml:lang="en">Coastal Cities / Towns (Australia) | Perth, WA</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417144258707">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx6">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145119371">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx6"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx6">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417144258707">
+	<ns2:prefLabel xml:lang="en">Coastal Cities / Towns (Australia) | Coffs Harbour, NSW</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145119371">
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145136870">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx7">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145119371">
+	<ns2:prefLabel xml:lang="en">Countries | Fiji</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145136870">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx7"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx7">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx8">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145136870">
+	<ns2:prefLabel xml:lang="en">Countries | Japan</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145149786">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx8">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145149786">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx8"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145159394">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx9"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx9">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145149786">
+	<ns2:prefLabel xml:lang="en">Countries | Mauritius</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145159394">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx9">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx10">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145243122">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx10"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx10">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145159394">
+	<ns2:prefLabel xml:lang="en">Countries | Tonga</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145243122">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145246028">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx11">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145243122">
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145246028">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx11"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx11">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145243122">
+	<ns2:prefLabel xml:lang="en">Marine Features (Australia) | Batemans Bay, NSW</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145246028">
+	<ns2:prefLabel xml:lang="en">Marine Features (Australia) | Bonney Coast, SA</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145254840">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx12">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145254840">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx12"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx13">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145254840">
+	<ns2:prefLabel xml:lang="en">Marine Features (Australia) | Heron Island, QLD</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145270560">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx13">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145270560">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx13"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx14">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145282961">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx14"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx14">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145270560">
+	<ns2:prefLabel xml:lang="en">Marine Features (Australia) | One Tree Island, QLD</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145282961">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx15">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145291497">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx15"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx15">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145282961">
+	<ns2:prefLabel xml:lang="en">Marine Features (Australia) | Perth Canyon, WA</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145291497">
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145326536">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx16">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145291497">
+	<ns2:prefLabel xml:lang="en">Marine Features (Australia) | Turquoise Coast, WA</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145326536">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx16"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx16">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx17">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145326536">
+	<ns2:prefLabel xml:lang="en">Coastal Cities / Towns (Australia) | Adelaide, SA</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145329434">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx17">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145329434">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx17"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145336770">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx18"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx18">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145329434">
+	<ns2:prefLabel xml:lang="en">Coastal Cities / Towns (Australia) | Brisbane, QLD</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145336770">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx18">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx19">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145346296">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx19"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx19">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145336770">
+	<ns2:prefLabel xml:lang="en">Coastal Cities / Towns (Australia) | Broome, WA</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145346296">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145355270">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx20">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145346296">
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145355270">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx20"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx20">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145346296">
+	<ns2:prefLabel xml:lang="en">Coastal Cities / Towns (Australia) | Bunbury, WA</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145355270">
+	<ns2:prefLabel xml:lang="en">Coastal Cities / Towns (Australia) | Cairns, QLD</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145365708">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx21">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145365708">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx21"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx22">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145365708">
+	<ns2:prefLabel xml:lang="en">Coastal Cities / Towns (Australia) | Devonport, TAS</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145373598">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx22">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145373598">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx22"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx23">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145380387">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx23"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx23">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145373598">
+	<ns2:prefLabel xml:lang="en">Coastal Cities / Towns (Australia) | Fremantle, WA</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145380387">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx24">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145387027">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx24"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx24">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145380387">
+	<ns2:prefLabel xml:lang="en">Coastal Cities / Towns (Australia) | Geraldton, WA</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145387027">
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145394269">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx25">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145387027">
+	<ns2:prefLabel xml:lang="en">Coastal Cities / Towns (Australia) | Gladstone, QLD</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145394269">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx25"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx25">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx26">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145394269">
+	<ns2:prefLabel xml:lang="en">Coastal Cities / Towns (Australia) | Hobart, TAS</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145403488">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx26">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145403488">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx26"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145413182">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx27"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx27">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145403488">
+	<ns2:prefLabel xml:lang="en">Coastal Cities / Towns (Australia) | Melbourne, VIC</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145413182">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx27">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx28">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145427427">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145420551">
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+	<ns2:prefLabel xml:lang="en">Coastal Cities / Towns (Australia) | Port Hedland, WA</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145427427">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx29"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145413182">
+	<ns2:prefLabel xml:lang="en">Coastal Cities / Towns (Australia) | Perth, WA</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145420551">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx29">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145420551">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx28"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145427427">
+	<ns2:prefLabel xml:lang="en">Coastal Cities / Towns (Australia) | Portland, VIC</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145434620">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx30">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145434620">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx30"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx31">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145434620">
+	<ns2:prefLabel xml:lang="en">Coastal Cities / Towns (Australia) | Sydney, NSW</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145444668">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx31">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145444668">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx31"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx32">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145452191">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx32"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx32">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145444668">
+	<ns2:prefLabel xml:lang="en">Coastal Cities / Towns (Australia) | Townsville, QLD</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145452191">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx33">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145462159">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx33"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx33">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145452191">
+	<ns2:prefLabel xml:lang="en">Continents | Antarctica</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145462159">
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145473331">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx34">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145462159">
+	<ns2:prefLabel xml:lang="en">Countries | Australia</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145473331">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx34"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx34">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx35">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145473331">
+	<ns2:prefLabel xml:lang="en">Countries | Indonesia</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145486185">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx35">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145486185">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx35"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145489059">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx36"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx36">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145486185">
+	<ns2:prefLabel xml:lang="en">Countries | New Caledonia</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145489059">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx36">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx37">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145497466">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx37"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx37">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145489059">
+	<ns2:prefLabel xml:lang="en">Countries | New Zealand</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145497466">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx38">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405044006">
+	<ns2:prefLabel xml:lang="en">Countries | Vanuatu</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx39">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx38">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405044006">
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145803860">
+	<ns2:prefLabel xml:lang="en">States, Territories (Australia) l South Australia</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145680490">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx39">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145803860">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx38"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145680490">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx39"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145497466">
+	<ns2:prefLabel xml:lang="en">Countries | Papua New Guinea</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145680490">
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145797093">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx40"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx40">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145788626">
+	<ns2:prefLabel xml:lang="en">States, Territories (Australia) | Victoria</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx41">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145788626">
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145797093">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145803860">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145758273">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx41">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145680490">
+	<ns2:prefLabel xml:lang="en">Named Locations (Antarctica) | Dumont D'Urville Sea (France)</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145758273">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx41"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx42">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145766955">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx42"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx42">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145758273">
+	<ns2:prefLabel xml:lang="en">States, Territories (Australia) | New South Wales</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145766955">
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145775070">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx43">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145766955">
+	<ns2:prefLabel xml:lang="en">States, Territories (Australia) | Queensland</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145775070">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx43"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx43">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx44">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145775070">
+	<ns2:prefLabel xml:lang="en">States, Territories (Australia) | South Australia</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145782478">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx44">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145782478">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx44"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145788626">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx45"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx45">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145782478">
+	<ns2:prefLabel xml:lang="en">States, Territories (Australia) | Tasmania</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145788626">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx45">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx40">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx46">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417404990088">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx46">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417404990088">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx46"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405009773">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx47">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417404990088">
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405009773">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx47"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx47">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417404990088">
+	<ns2:prefLabel xml:lang="en">Countries | Philippines</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405009773">
+	<ns2:prefLabel xml:lang="en">Countries | Solomon Islands</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405044006">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx48">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405044006">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx48"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx49">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145797093">
+	<ns2:prefLabel xml:lang="en">States, Territories (Australia) | Northern Territory</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405108801">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx49">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405108801">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx49"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx50">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405134112">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx50"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx50">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405108801">
+	<ns2:prefLabel xml:lang="en">Countries | Timor-Leste</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405134112">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx51">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405146176">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx51"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx51">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405134112">
+	<ns2:prefLabel xml:lang="en">Countries | Singapore</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405146176">
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405158067">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx52">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405146176">
+	<ns2:prefLabel xml:lang="en">Countries | China</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405158067">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx52"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx52">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx53">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405158067">
+	<ns2:prefLabel xml:lang="en">Countries | South Korea</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405170957">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx53">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405170957">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx53"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405207794">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx54"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx54">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405170957">
+	<ns2:prefLabel xml:lang="en">Countries | Samoa</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405207794">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx54">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx55">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405225427">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx55"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx55">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405207794">
+	<ns2:prefLabel xml:lang="en">Countries | French Polynesia</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405225427">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405245874">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx56">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405225427">
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405245874">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx56"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx56">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405225427">
+	<ns2:prefLabel xml:lang="en">Countries | United States of America</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405245874">
+	<ns2:prefLabel xml:lang="en">Countries | Panama</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405258404">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx57">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405258404">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx57"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx58">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405258404">
+	<ns2:prefLabel xml:lang="en">Countries | Italy</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405268167">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx58">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405268167">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx58"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx59">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405280761">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx59"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx59">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405268167">
+	<ns2:prefLabel xml:lang="en">Countries | Saudi Arabia</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405280761">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx60">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405345757">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx60"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx60">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405280761">
+	<ns2:prefLabel xml:lang="en">Countries | India</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405345757">
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405389573">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx61">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405345757">
+	<ns2:prefLabel xml:lang="en">Marine Features (Australia) | Kangaroo Island, SA</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405389573">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx61"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx61">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx62">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405389573">
+	<ns2:prefLabel xml:lang="en">Marine Features (Australia) | Maria Island, TAS</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405444501">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx62">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405444501">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx62"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417407632429">
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx63">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417407632429">
+	<ns2:prefLabel xml:lang="en">Coastal Cities / Towns (Australia) | Eden, NSW</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417407665407">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx64"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405471461">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx63">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405677477">
+	<ns2:prefLabel xml:lang="en">Coastal Cities / Towns (Australia) | Tuncurry, NSW</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405471461">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx63"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405444501">
+	<ns2:prefLabel xml:lang="en">Marine Features (Australia) | Kimberley Coast, WA</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417407665407">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405677477">
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417407707686">
+	<ns2:prefLabel xml:lang="en">Coastal Cities / Towns (Australia) | Byron Bay, NSW</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405471461">
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx65">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417407707686">
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405471461">
+	<ns2:prefLabel xml:lang="en">Marine Features (Australia) | Kimberley Islands, WA</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417407707686">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx65"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405537468">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx66">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405537468">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx66"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx67">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405537468">
+	<ns2:prefLabel xml:lang="en">Marine Features (Australia) | Ningaloo Marine Park, WA</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405556109">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx67">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405556109">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx67"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx68">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405578188">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx68"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx68">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405556109">
+	<ns2:prefLabel xml:lang="en">Marine Features (Australia) | Pilbara Coast, WA</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405578188">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx69">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405677477">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx69"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx69">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405578188">
+	<ns2:prefLabel xml:lang="en">Coastal Cities / Towns (Australia) | Esperance, WA</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405879233">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx70">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx64">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405879233">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx70"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx70">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx71">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405879233">
+	<ns2:prefLabel xml:lang="en">Countries | Madagascar</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405892148">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx71">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405892148">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx71"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405903929">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx72"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx72">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405892148">
+	<ns2:prefLabel xml:lang="en">Countries | South Africa</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405903929">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx72">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx73">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405916774">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx73"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx73">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405903929">
+	<ns2:prefLabel xml:lang="en">Countries | Chile</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405916774">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405945106">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx74">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405916774">
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405945106">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx74"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx74">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405916774">
+	<ns2:prefLabel xml:lang="en">Countries | Brazil</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417405945106">
+	<ns2:prefLabel xml:lang="en">Marine Features (Australia) | North Stradbroke Island, QLD</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417406010481">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx75">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417406010481">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx75"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx76">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417406010481">
+	<ns2:prefLabel xml:lang="en">Marine Features | Hawaiin Islands, USA</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417406310054">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx76"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx76">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417406310054">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx77">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417406444945">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx77"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx77">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417406310054">
+	<ns2:prefLabel xml:lang="en">Marine Features (Australia) | Port Hacking, NSW</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417406444945">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx78">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417406507075">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx78"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx78">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417406444945">
+	<ns2:prefLabel xml:lang="en">Marine Features (Australia) | Eyre Peninsula, SA</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417406507075">
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417407665407">
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417406507075">
+	<ns2:prefLabel xml:lang="en">Marine Features (Australia) | Lizard Island, QLD</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx64">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417407707686">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx79">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx65">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417407665407">
+	<ns2:prefLabel xml:lang="en">Coastal Cities / Towns (Australia) | Port Kembla, NSW</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417406551491">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx79">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417406551491">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx79"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417406613696">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx80"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx80">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417406551491">
+	<ns2:prefLabel xml:lang="en">Marine Features (Australia) | Orpheus Island, QLD</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417406613696">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx80">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx81">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417406655039">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx81"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx81">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417406613696">
+	<ns2:prefLabel xml:lang="en">Coastal Cities / Towns (Australia) | Port Hacking, NSW</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417406655039">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<ns2:prefLabel xml:lang="en">Coastal Cities / Towns (Australia) | Darwin, NT</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417406724348">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417408247253">
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+	<ns2:prefLabel xml:lang="en">Countries | Brazil</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417406724348">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx82"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx83">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx82">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417406773533">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx83">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417406773533">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx83"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx84">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417406773533">
+	<ns2:prefLabel xml:lang="en">Offshore Islands (Australia) | Macquarie Island</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417406818071">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx84">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417406818071">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx84"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx85">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417406891008">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx85"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx85">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417406818071">
+	<ns2:prefLabel xml:lang="en">Offshore Islands (Australia) | Heard and McDonald Islands</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417406891008">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<ns2:prefLabel xml:lang="en">Countries | Sri Lanka</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx86">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417407632429">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx86"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx86">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx87">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417407973127">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx87"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx87">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417407973127">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417408027737">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx88">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417407973127">
+	<ns2:prefLabel xml:lang="en">Marine Features (Australia) | Groote Eylandt, NT</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417408027737">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx88"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx88">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx89">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417408027737">
+	<ns2:prefLabel xml:lang="en">Countries | Malaysia</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417408069093">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx89">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417408069093">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx89"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417408097878">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx90"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx90">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417408069093">
+	<ns2:prefLabel xml:lang="en">Countries | Thailand</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417408097878">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx90">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx91">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417408111253">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx91"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx91">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417408097878">
+	<ns2:prefLabel xml:lang="en">Countries | China</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417408111253">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417408127127">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx92">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417408111253">
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417408127127">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx92"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx92">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417408111253">
+	<ns2:prefLabel xml:lang="en">Continents | South America</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417408127127">
+	<ns2:prefLabel xml:lang="en">Continents | Africa</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417408141672">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx93">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417408141672">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx93"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx94">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417408141672">
+	<ns2:prefLabel xml:lang="en">Continents | Asia</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417408212119">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx94">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417408212119">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx94"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx95">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417408233878">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx95"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx95">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417408212119">
+	<ns2:prefLabel xml:lang="en">Countries | Argentina</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417408233878">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx96">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417408247253">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx96"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx96">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417408233878">
+	<ns2:prefLabel xml:lang="en">Countries | Uruguay</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417406724348">
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417410841792">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx97">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417406724348">
+	<ns2:prefLabel xml:lang="en">Countries | South Africa</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417410841792">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx97"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx97">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx98">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417410841792">
+	<ns2:prefLabel xml:lang="en">Marine Features (Australia) | Great Barrier Reef, QLD</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417484756530">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx98">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417484756530">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx98"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417484800040">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx99"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx99">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417484756530">
+	<ns2:prefLabel xml:lang="en">Coastal Cities / Towns (Australia) | Tannum Sands, QLD</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417484800040">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx99">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx100">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417490523107">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx100"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx100">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417484800040">
+	<ns2:prefLabel xml:lang="en">Marine Features (Australia) | Lady Elliot Island, QLD</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417490523107">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417490536041">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx101">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417490523107">
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417490536041">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx101"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx101">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417490523107">
+	<ns2:prefLabel xml:lang="en">Continents | North America</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1417490536041">
+	<ns2:prefLabel xml:lang="en">Continents | Europe</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx102">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1418964638905">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arps2hx102">
+	<ns6:lowerCorner> </ns6:lowerCorner>
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+	<ns6:upperCorner> </ns6:upperCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/land-masses#1418964638905">
+	<ns6:BoundedBy rdf:nodeID="node199arps2hx102"/>
+	<ns2:prefLabel xml:lang="en">Countries | Vietnam</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+</rdf:RDF>

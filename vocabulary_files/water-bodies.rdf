@@ -1,0 +1,824 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:ns2="http://www.w3.org/2004/02/skos/core#"
+	xmlns:ns3="http://purl.org/dc/elements/1.1/"
+	xmlns:ns6="http://www.opengis.net/gml#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+<rdf:Description rdf:nodeID="node199arprtlx1">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417143726925">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx2">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417143699544">
+	<ns2:prefLabel xml:lang="en">Global / Oceans | Indian Ocean</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+	<ns3:title>water-bodies</ns3:title>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx2">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417143699544">
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417143726925">
+	<ns6:BoundedBy rdf:nodeID="node199arprtlx1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417143699544">
+	<ns6:BoundedBy rdf:nodeID="node199arprtlx2"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417143726925">
+	<ns2:prefLabel xml:lang="en">Global / Oceans | Atlantic Ocean</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145528346">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx3">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145528346">
+	<ns6:BoundedBy rdf:nodeID="node199arprtlx3"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx4">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145528346">
+	<ns2:prefLabel xml:lang="en">Global / Oceans | Pacific Ocean</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145537018">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx4">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145537018">
+	<ns6:BoundedBy rdf:nodeID="node199arprtlx4"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx5">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145544876">
+	<ns6:BoundedBy rdf:nodeID="node199arprtlx5"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx5">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145537018">
+	<ns2:prefLabel xml:lang="en">Global / Oceans | Southern Ocean</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145544876">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx6">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145560329">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<ns6:BoundedBy rdf:nodeID="node199arprtlx6"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx6">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145544876">
+	<ns2:prefLabel xml:lang="en">Global / Oceans | World Ocean</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145560329">
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145567613">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx7">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145560329">
+	<ns2:prefLabel xml:lang="en">Marine Features (Australia) | Bass Strait, TAS/VIC</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145567613">
+	<ns6:BoundedBy rdf:nodeID="node199arprtlx7"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx7">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx8">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145567613">
+	<ns2:prefLabel xml:lang="en">Marine Features (Australia) | Derwent Estuary, TAS</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145574495">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx8">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145574495">
+	<ns6:BoundedBy rdf:nodeID="node199arprtlx8"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1417404867034">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx9">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145574495">
+	<ns2:prefLabel xml:lang="en">Marine Features (Australia) | Great Australian Bight, SA/WA</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx10">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1417404817546">
+	<ns2:prefLabel xml:lang="en">Marine Features | Bay of Bengal</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1417406106705">
+	<ns2:prefLabel xml:lang="en">Marine Features (Australia) | Jervis Bay, ACT</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1417404817546">
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1417406106705">
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx10">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1417404867034">
+	<ns6:BoundedBy rdf:nodeID="node199arprtlx10"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1417406106705">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1417404690754">
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1417404867034">
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx9">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1417404817546">
+	<ns6:BoundedBy rdf:nodeID="node199arprtlx11"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1417404867034">
+	<ns2:prefLabel xml:lang="en">Regional Seas | Mozambique Channel</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1417406106705">
+	<ns6:BoundedBy rdf:nodeID="node199arprtlx9"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx11">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1417404690754">
+	<ns2:prefLabel xml:lang="en">Marine Features (Australia) | Gulf of Carpentaria, NT/QLD</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx12">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1417404817546">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx11">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx13">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1417404658709">
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1417404690512">
+	<ns6:BoundedBy rdf:nodeID="node199arprtlx13"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx12">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1417404690512">
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<ns2:prefLabel xml:lang="en">Regional Seas | Baltic Sea</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx14">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145629566">
+	<ns6:BoundedBy rdf:nodeID="node199arprtlx14"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx14">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1417404690754">
+	<ns6:BoundedBy rdf:nodeID="node199arprtlx12"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1417404658709">
+	<ns2:prefLabel xml:lang="en">Global / Oceans | Arctic Ocean</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145629566">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx13">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1417404509298">
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1417404658709">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1417404690754">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145629566">
+	<ns2:prefLabel xml:lang="en">Marine Features (Australia) | Gulf St. Vincent, SA</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx15">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145644455">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx16">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1417404658709">
+	<ns6:BoundedBy rdf:nodeID="node199arprtlx15"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145644455">
+	<ns6:BoundedBy rdf:nodeID="node199arprtlx16"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx16">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx17">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145644455">
+	<ns2:prefLabel xml:lang="en">Marine Features (Australia) | Spencer Gulf, SA</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145651045">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx17">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145651045">
+	<ns6:BoundedBy rdf:nodeID="node199arprtlx17"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx18">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145710932">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx19">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145710932">
+	<ns6:BoundedBy rdf:nodeID="node199arprtlx19"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145651045">
+	<ns2:prefLabel xml:lang="en">Marine Features (Australia) | Torres Strait, QLD</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145658939">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx20">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145658939">
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+	<ns6:BoundedBy rdf:nodeID="node199arprtlx18"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx19">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx18">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145713532">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx21">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145710932">
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145713532">
+	<ns6:BoundedBy rdf:nodeID="node199arprtlx21"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx21">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145710932">
+	<ns2:prefLabel xml:lang="en">Regional Seas | Banda Sea</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145713532">
+	<ns2:prefLabel xml:lang="en">Regional Seas | Coral Sea</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145720204">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx22">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145720204">
+	<ns6:BoundedBy rdf:nodeID="node199arprtlx22"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx23">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145720204">
+	<ns2:prefLabel xml:lang="en">Regional Seas | Flores Sea</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145727977">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx23">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145727977">
+	<ns6:BoundedBy rdf:nodeID="node199arprtlx23"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145658939">
+	<ns2:prefLabel xml:lang="en">Regional Seas | Tasman Sea</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145743566">
+	<ns6:BoundedBy rdf:nodeID="node199arprtlx20"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx20">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145727977">
+	<ns2:prefLabel xml:lang="en">Regional Seas | Solomon Sea</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.mysite.org/thesaurus#1417145743566">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<ns2:prefLabel xml:lang="en">Regional Seas | Timor Sea</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx24">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1417404169695">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<ns6:BoundedBy rdf:nodeID="node199arprtlx24"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx24">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1417404169695">
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1417404248666">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx25">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1417404169695">
+	<ns2:prefLabel xml:lang="en">Regional Seas | Arabian Sea</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1417404248666">
+	<ns6:BoundedBy rdf:nodeID="node199arprtlx25"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx25">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1417404274548">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx26">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1417404274548">
+	<ns6:BoundedBy rdf:nodeID="node199arprtlx27"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1417404248666">
+	<ns2:prefLabel xml:lang="en">Regional Seas | Philippine Sea</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1417404274384">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx27">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx28">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1417404274384">
+	<ns6:BoundedBy rdf:nodeID="node199arprtlx28"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx27">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx28">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1417404274548">
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+	<ns2:prefLabel xml:lang="en">Regional Seas | East China Sea</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1417404311957">
+	<ns6:BoundedBy rdf:nodeID="node199arprtlx26"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx26">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1417404274384">
+	<ns2:prefLabel xml:lang="en">Regional Seas | Celebes Sea</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1417404311957">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1417404336900">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx29">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1417404311957">
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1417404336900">
+	<ns6:BoundedBy rdf:nodeID="node199arprtlx29"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx29">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1417404311957">
+	<ns2:prefLabel xml:lang="en">Regional Seas | Bismarck Sea</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1417404336900">
+	<ns2:prefLabel xml:lang="en">Regional Seas | Mediterranean Sea</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1417404352501">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx30">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1417404352501">
+	<ns6:BoundedBy rdf:nodeID="node199arprtlx30"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx31">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1417404352501">
+	<ns2:prefLabel xml:lang="en">Regional Seas | Red Sea</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1417404373273">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx31">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1417404373273">
+	<ns6:BoundedBy rdf:nodeID="node199arprtlx31"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx32">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1417404390514">
+	<ns6:BoundedBy rdf:nodeID="node199arprtlx32"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx32">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1417404373273">
+	<ns2:prefLabel xml:lang="en">Regional Seas | Arafura Sea</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1417404390514">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx33">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1417404431431">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<ns6:BoundedBy rdf:nodeID="node199arprtlx33"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx33">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1417404390514">
+	<ns2:prefLabel xml:lang="en">Regional Seas | Java Sea</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1417404431431">
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1417404509298">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx34">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1417404431431">
+	<ns2:prefLabel xml:lang="en">Regional Seas | South China Sea</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1417404509298">
+	<ns6:BoundedBy rdf:nodeID="node199arprtlx34"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx34">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx15">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1417404509298">
+	<ns2:prefLabel xml:lang="en">Marine Features (Australia) | Storm Bay, TAS</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1417472230029">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx35">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1417472230029">
+	<ns6:BoundedBy rdf:nodeID="node199arprtlx35"/>
+	<ns2:prefLabel xml:lang="en">Marine Features (Australia) | Perth Canyon, WA</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx36">
+	<ns6:upperCorner> </ns6:upperCorner>
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1418950239225">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx36">
+	<ns6:lowerCorner> </ns6:lowerCorner>
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1418950239225">
+	<ns6:BoundedBy rdf:nodeID="node199arprtlx36"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx37">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+	<ns6:lowerCorner> </ns6:lowerCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1418967958254">
+	<ns6:BoundedBy rdf:nodeID="node199arprtlx37"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx37">
+	<ns6:upperCorner> </ns6:upperCorner>
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1418950239225">
+	<ns2:prefLabel xml:lang="en">Marine Features | Strait of Malacca</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1418967958254">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1418969342828">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx38">
+	<ns6:lowerCorner> </ns6:lowerCorner>
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1418967958254">
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1418969342828">
+	<ns6:BoundedBy rdf:nodeID="node199arprtlx38"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node199arprtlx38">
+	<ns6:upperCorner> </ns6:upperCorner>
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1418967958254">
+	<ns2:prefLabel xml:lang="en">Regional Seas | Gulf of Thailand</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/water-bodies#1418969342828">
+	<ns2:prefLabel xml:lang="en">Regional Seas | Andaman Sea</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+</rdf:RDF>
